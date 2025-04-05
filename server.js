@@ -1,11 +1,24 @@
 // server.js
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'path';
 const app = express();
 const port = process.env.PORT || 3000;
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename)
+
+console.log(__dirname)
+console.log(__filename)
+console.log(path.join(__dirname, '/public'))
+
+import "./oauth.js"
+import { initialOauthSignin} from "./oauth.js";
+
+app.use('/public', express.static(path.join(__dirname, '/public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'main.html'));
+    res.sendFile(path.join(__dirname, 'public/main.html'));
 });
 
 app.listen(port, () => {
