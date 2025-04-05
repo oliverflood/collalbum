@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import uuid
+
 
 GRID_SIZE = 10
 NUM_IMAGES = GRID_SIZE * GRID_SIZE
@@ -50,7 +52,7 @@ def snap_images_y(coords, grid_size=GRID_SIZE):
 
     return coords_copy
 
-def plot_images_on_canvas(images, coords, zoom=0.6):
+def plot_images_on_canvas(images, coords, zoom=0.6, save_dir="collages"):
     fig, ax = plt.subplots(figsize=(10, 10))
     ax.set_xlim(coords[:, 0].min() - 1, coords[:, 0].max() + 1)
     ax.set_ylim(coords[:, 1].min() - 1, coords[:, 1].max() + 1)
@@ -61,15 +63,21 @@ def plot_images_on_canvas(images, coords, zoom=0.6):
         ab = AnnotationBbox(imagebox, (x, y), frameon=False)
         ax.add_artist(ab)
 
-    plt.tight_layout()
+    if save_dir:
+        os.makedirs(save_dir, exist_ok=True)
+        unique_id = uuid.uuid4().hex[:6]  # short 6-char ID
+        save_path = os.path.join(save_dir, f"collage_{unique_id}.png")
+        plt.tight_layout()
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        print(f'Saved collage to {save_path}')
 
 folder_path = "STL10_sample_images"
 images, image_vectors = load_and_flatten_images(folder_path)
 coords = reduce_with_pca(image_vectors)
-plot_images_on_canvas(images, coords)
+plot_images_on_canvas(images, coords, save_dir=None)
 
 snapped_coords = snap_images_x(coords)
-plot_images_on_canvas(images, snapped_coords)
+plot_images_on_canvas(images, snapped_coords, save_dir=None)
 
 snapped_coords = snap_images_y(snapped_coords)
 plot_images_on_canvas(images, snapped_coords)
