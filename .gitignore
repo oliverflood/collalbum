@@ -1,1 +1,15 @@
 /node_modules
+
+# Ignore downloaded datasets
+data/
+cifar10_sample_images/
+STL10_sample_images/
+
+# Ignore common output and cache files (in case)
+*.pyc
+__pycache__/
+*.ipynb_checkpoints/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
