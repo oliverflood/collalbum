@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>Spotify Album Creator</title>
     </head>
-    <body>
-        <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Chromakopia_CD_cover.jpg"/>
-    </body>
-    <button>
-        Login to Spotify
+    <style>
+        .spotify-button {
+            background-color: #1DB954;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .spotify-logo {
+            width: 20px;
+            height: 20px;
+        }
+
+        div.scroll-container {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+        div.scroll-container img {
+            padding: 0px;
+            scale: 1;
+        }
+        div.scroll-container img:hover {
+            scale: 1.1;
+        }
+
+    </style>
+    
+    <nav>    
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Chromakopia_CD_cover.jpg"/>
+    </nav>
+
+
+
+    <div class="scroll-container"> 
+        <img src="https://i.scdn.co/image/ab67616d0000b2736b219c8d8462bfe254a20469" alt="Album Cover Art" height="320px" width="320px"/>
+        <img src="https://i.scdn.co/image/ab67616d0000b273a8d74e789b99484e0e169001" alt="Album Cover Art" height="320px" width="320px"/>
+        <img src="https://i.scdn.co/image/ab67616d0000b2735998097d9467eccb3e99b8c1" alt="Album Cover Art" height="320px" width="320px"/>
+        <img src="https://i.scdn.co/image/ab67616d0000b273b2592bea12d840fd096ef965" alt="Album Cover Art" height="320px" width="320px"/>
+        <img src="https://i.scdn.co/image/ab67616d0000b27326d64b6150aa3d9b6b67d857" alt="Album Cover Art" height="320px" width="320px"/>
+    </div>
+
+    <button id="spotify-login" class="spotify-button" href="#">
+        <img class="spotify-logo" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo">
+        Sign in with Spotify
     </button>
+
+    <script>
+        const clientId = 'YOUR_SPOTIFY_CLIENT_ID';
+        const redirectUri = 'http://localhost:3000/callback'; // your backend route that handles the code
+        const scopes = [
+        'user-read-private',
+        'user-read-email'
+        ];
+
+        const loginButton = document.getElementById('spotify-login');
+
+        loginButton.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const authUrl = new URL('https://accounts.spotify.com/authorize');
+        authUrl.searchParams.set('response_type', 'code');
+        authUrl.searchParams.set('client_id', clientId);
+        authUrl.searchParams.set('scope', scopes.join(' '));
+        authUrl.searchParams.set('redirect_uri', redirectUri);
+
+        // Optional: add state param
+        // authUrl.searchParams.set('state', 'some-random-string');
+
+        window.location.href = authUrl.toString();
+        });
+    </script>
 </html>
