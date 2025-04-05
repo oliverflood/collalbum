@@ -2,6 +2,10 @@ const access_token = localStorage.getItem('access_token')
 const clientId = '867d29a6e7e9406c9ebe3efd80da2f06';
 const redirectUri = 'http://localhost:3000/';
 
+
+
+
+
 const generateRandomString = (length) => {
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const values = crypto.getRandomValues(new Uint8Array(length));
@@ -73,8 +77,16 @@ const getToken = async (code) => {
     localStorage.setItem('access_token', response.access_token);
 }
 
+const login = () => {
+    const codeVerifier  = generateRandomString(64);
+    initAuth(codeVerifier);
+}
 
-if (access_token) {
+document.getElementById("login_button").onclick = login
+
+
+const redirectDetermination = async () => {
+  if (access_token) {
     fetch("https://api.spotify.com/v1/me/top/tracks?limit=50&time_range=long_term", {
         method: "GET",
         headers: {
@@ -84,20 +96,18 @@ if (access_token) {
         return response.json() 
     }).then((data) => {
         data.items.forEach(element => {
-            console.log(element.album.name)
+            console.log(element.album.images[0])
         });
     })
-} else {
-
-  const urlParams = new URLSearchParams(window.location.search);
-  let code = urlParams.get('code');
-
-  if (code == null) {
-
-    const codeVerifier  = generateRandomString(64);
-    initAuth(codeVerifier);
-
   } else {
-    getToken(code);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    let code = urlParams.get('code');
+
+    if (code) {
+      await getToken(code)
+    }
   }
 }
+
+redirectDetermination()
