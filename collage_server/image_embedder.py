@@ -21,12 +21,19 @@ PROJECT_ID = os.getenv("PROJECT_ID")
 LOCATION = os.getenv("LOCATION")
 MODEL = "text-embedding-005"
 
-# Setup disk cache
-cache = dc.Cache("semantic_cache")
+# Save caches to the root of the project
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+SEMANTIC_CACHE_DIR = os.path.join(PROJECT_ROOT, "semantic_cache")
+VISUAL_CACHE_DIR = os.path.join(PROJECT_ROOT, "visual_cache")
+
+# Setup disk caches with fixed paths
+semantic_cache = dc.Cache(SEMANTIC_CACHE_DIR)
+visual_cache = dc.Cache(VISUAL_CACHE_DIR)
+
 
 def image_url_to_semantic_vector(image_url: str) -> list[float]:
-    if image_url in cache:
-        return cache[image_url]
+    if image_url in semantic_cache:
+        return semantic_cache[image_url]
 
     groq_response = groq_client.chat.completions.create(
         model="meta-llama/llama-4-scout-17b-16e-instruct",
@@ -61,7 +68,7 @@ def image_url_to_semantic_vector(image_url: str) -> list[float]:
 
     if response.status_code == 200:
         embedding = response.json()["predictions"][0]["embeddings"]["values"]
-        cache[image_url] = embedding
+        semantic_cache[image_url] = embedding
         return embedding
     else:
         raise Exception(f"Google API error: {response.status_code} - {response.text}")
@@ -81,10 +88,22 @@ def load_images_from_urls(url_list: list[str]) -> list[Image.Image]:
 def flatten_images(images: list[Image.Image], size=IMAGE_SIZE) -> np.ndarray:
     return np.array([np.asarray(img.resize(size)).flatten() for img in images])
 
+def image_url_to_visual_vector(image_url: str) -> np.ndarray:
+    if image_url in visual_cache:
+        print(f'used visual cache for image {image_url}')
+        return visual_cache[image_url]
+
+    response = requests.get(image_url)
+    img = Image.open(BytesIO(response.content)).convert("RGB")
+    img_resized = img.resize(IMAGE_SIZE)
+    vector = np.asarray(img_resized).flatten().astype(np.float32)
+
+    visual_cache[image_url] = vector
+    return vector
+
 def image_urls_to_visual_vectors(image_urls: list[str]) -> np.ndarray:
-    images = load_images_from_urls(image_urls)
-    flattened = flatten_images(images)
-    return flattened.astype(np.float32)
+    vectors = [image_url_to_visual_vector(url) for url in image_urls]
+    return np.array(vectors, dtype=np.float32)
 
 def normalize_vectors(vectors: np.ndarray) -> np.ndarray:
     norms = np.linalg.norm(vectors, axis=1, keepdims=True)
