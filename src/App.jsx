@@ -3,8 +3,8 @@
   import AutoScrollGallery from './AutoScrollGallery.jsx';
   import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 
-  const clientId = "867d29a6e7e9406c9ebe3efd80da2f06";
-  const redirectUri = "http://localhost:4000/";//"https://collalbum.guessmybuild.com/";
+  const clientId = "c7d69233368e4745b7032ab8837ae6d4";
+  const redirectUri = "https://collalbum.guessmybuild.com/";
 
   let hasRunRef = false;
 
