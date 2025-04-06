@@ -95,7 +95,7 @@
 
         var attempts = 0
 
-        while (artDictionary.size < 25 && attempts < 6) {
+        while (attempts < 6) {
           const response = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=50&offset="+ (attempts * 50).toString() +"&time_range=long_term", {
               method: "GET",
               headers: {
@@ -106,7 +106,7 @@
 
           const data = await response.json() 
           data.items.forEach(element => {
-            if (!artDictionary[element.album.images[0].url] && artDictionary.size < 25) {
+            if (!artDictionary[element.album.images[0].url]) {
               artDictionary.set(element.album.images[0].url, 1)
             } 
           });
@@ -116,7 +116,7 @@
 
         let image_urls = Array.from(artDictionary.keys())
         console.log(image_urls)
-        while (image_urls.length < 25) {
+        while (image_urls.length < 36) {
           let randomIndex = Math.floor(Math.random() * image_urls.length)
           image_urls.push(image_urls[randomIndex])
         }
@@ -134,6 +134,7 @@
         
         console.log(data2.image_address)
         document.getElementById("collage-image").src = data2.image_address
+        document.getElementById("link_container").textContent = "This is your link: " + data2.image_address
       };
 
 
@@ -165,6 +166,10 @@
       <>
         <div id="collage-image-container">
           <img id="collage-image" src="https://upload.wikimedia.org/wikipedia/en/5/5b/Chromakopia_CD_cover.jpg" />
+        </div>
+
+        <div id="link_container">
+          Your image is loading...
         </div>
 
         <AutoScrollGallery />

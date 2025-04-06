@@ -27,14 +27,14 @@ app.post("/generateImage", (req, res) => {
         axios.post("http://localhost:5000/generate_collage", data, {responseType: 'stream'})
         .then((response) => {
             const id = uuidv4() 
-            const savePath = path.resolve(__dirname, "public", id+".jpg")
+            const savePath = path.resolve(__dirname, "public/images", id+".jpg")
             const writer = fs.createWriteStream(savePath);
 
             response.data.pipe(writer);
 
             writer.on('finish', () => {
                 console.log('Image downloaded and saved successfully!');
-                res.json({image_address: "http://localhost:4000/public/"+id+".jpg"})
+                res.json({image_address: "http://localhost:4000/public/images/"+id+".jpg"})
             });
         })
     }
