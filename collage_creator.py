@@ -134,6 +134,7 @@ def generate_collage():
     """
     data = request.get_json()
     image_urls = data.get('images', [])
+    print(image_urls)
 
     if len(image_urls) != NUM_IMAGES:
         return jsonify({'error': f'Expected {NUM_IMAGES} images, got {len(image_urls)}'}), 400
