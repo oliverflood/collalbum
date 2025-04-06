@@ -130,7 +130,40 @@ def plot_images_on_canvas(images, coords, save_dir=SAVE_DIR):
 def generate_collage():
     """
     Flask endpoint that accepts a JSON payload of image URLs,
-    generates a collage, and returns the image.
+    generates a PCA-based collage layout, and returns the resulting image.
+
+    Method: POST
+    Endpoint: /generate_collage
+    Content-Type: application/json
+
+    Args (JSON payload):
+        {
+            "images": [
+                "https://i.scdn.co/image/ab67616d0000b273...",
+                "https://i.scdn.co/image/ab67616d0000b273...",
+                ...
+            ]
+        }
+
+    Returns:
+        On success: PNG image file (binary) with Content-Type: image/png
+        On failure: JSON object with error message and HTTP 400 or 500 status
+
+    Example `curl` request:
+        curl -X POST http://localhost:5000/generate_collage \
+            -H "Content-Type: application/json" \
+            -d '{
+                  "images": [
+                    "https://i.scdn.co/image/ab67616d0000b273...",
+                    "https://i.scdn.co/image/ab67616d0000b273...",
+                    ...
+                  ]
+                }' \
+            --output result.png
+
+    Notes:
+        The number of image URLs must match the configured NUM_IMAGES (default: 25).
+        The response is a binary PNG file and not a JSON object.
     """
     data = request.get_json()
     image_urls = data.get('images', [])
