@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import './AutoScrollGallery.css';
 
 const imageUrls = [
-    'https://i.scdn.co/image/ab67616d0000b2736b219c8d8462bfe254a20469',
-    'https://i.scdn.co/image/ab67616d0000b273a8d74e789b99484e0e169001',
+    'https://collalbum.guessmybuild.com/images/545163e9-ed72-4583-929a-09587bc52659.jpg',
+	'https://i.scdn.co/image/ab67616d0000b273a8d74e789b99484e0e169001',
     'https://i.scdn.co/image/ab67616d0000b2735998097d9467eccb3e99b8c1',
     'https://i.scdn.co/image/ab67616d0000b273b2592bea12d840fd096ef965',
     'https://i.scdn.co/image/ab67616d0000b27326d64b6150aa3d9b6b67d857'

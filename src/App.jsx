@@ -272,6 +272,14 @@
 
     return (
       <>
+
+	<header>
+	    <h1 className="pageTitle">Collalbum</h1>
+	    <p className="description">
+	    	For when someone asks you, "Whats your music taste?"
+	    </p>
+	</header>
+	
         <AutoScrollGallery />
 
         <CollageImage ref={componentRef}/>
