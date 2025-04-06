@@ -2,6 +2,8 @@ import os
 import uuid
 import numpy as np
 from PIL import Image
+import matplotlib
+matplotlib.use('Agg') # Fix multithreading issue when using the server (use non-GUI backend)
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox

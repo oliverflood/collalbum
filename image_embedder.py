@@ -8,6 +8,7 @@ from google.auth.transport.requests import Request
 import numpy as np
 from PIL import Image
 from io import BytesIO
+import diskcache as dc
 
 # Constants
 IMAGE_SIZE = (16, 16)
@@ -20,26 +21,29 @@ PROJECT_ID = os.getenv("PROJECT_ID")
 LOCATION = os.getenv("LOCATION")
 MODEL = "text-embedding-005"
 
-def image_urls_to_semantic_vectors(image_urls: list[str]) -> np.ndarray:
-    descriptions = []
-    for url in image_urls:
-        groq_response = groq_client.chat.completions.create(
-            model="meta-llama/llama-4-scout-17b-16e-instruct",
-            messages=[
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "text", "text": "Describe this album cover in a sentence."},
-                        {"type": "image_url", "image_url": {"url": url}},
-                    ],
-                }
-            ],
-            temperature=0.7,
-            max_completion_tokens=256,
-        )
-        description = groq_response.choices[0].message.content
-        print(f"Groq Description: {description}")
-        descriptions.append({"content": description})
+# Setup disk cache
+cache = dc.Cache("semantic_cache")
+
+def image_url_to_semantic_vector(image_url: str) -> list[float]:
+    if image_url in cache:
+        return cache[image_url]
+
+    groq_response = groq_client.chat.completions.create(
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
+        messages=[
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": "Describe this album cover in a sentence."},
+                    {"type": "image_url", "image_url": {"url": image_url}},
+                ],
+            }
+        ],
+        temperature=0.7,
+        max_completion_tokens=256,
+    )
+    description = groq_response.choices[0].message.content
+    print(f"Groq Description: {description}")
 
     credentials, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
     credentials.refresh(Request())
@@ -52,14 +56,19 @@ def image_urls_to_semantic_vectors(image_urls: list[str]) -> np.ndarray:
         "Content-Type": "application/json"
     }
 
-    payload = {"instances": descriptions}
+    payload = {"instances": [{"content": description}]}
     response = requests.post(endpoint, headers=headers, json=payload)
 
     if response.status_code == 200:
-        embeddings = [pred["embeddings"]["values"] for pred in response.json()["predictions"]]
-        return np.array(embeddings, dtype=np.float32)
+        embedding = response.json()["predictions"][0]["embeddings"]["values"]
+        cache[image_url] = embedding
+        return embedding
     else:
         raise Exception(f"Google API error: {response.status_code} - {response.text}")
+
+def image_urls_to_semantic_vectors(image_urls: list[str]) -> np.ndarray:
+    vectors = [image_url_to_semantic_vector(url) for url in image_urls]
+    return np.array(vectors, dtype=np.float32)
 
 def load_images_from_urls(url_list: list[str]) -> list[Image.Image]:
     images = []
