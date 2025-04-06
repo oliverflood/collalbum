@@ -24,7 +24,7 @@ def generate_collage():
 
     try:
         collage_path = generate_collage_from_image_urls(image_urls, load_images_from_urls)
-        return send_file(collage_path, mimetype="image/jpeg")
+        return send_file("C:\\Users\\Jack Kammerer\\Desktop\\collalbum\\" + collage_path, mimetype="image/jpeg")
 
     except Exception as e:
         print("Error occurred:", e)

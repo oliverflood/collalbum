@@ -1,6 +1,8 @@
 /node_modules
 /dist
 
+/semantic_cache
+
 # NO API KEY FOR YOU
 .env
 
