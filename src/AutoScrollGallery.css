@@ -1,0 +1,21 @@
+.scroll-container {
+    z-index: -1;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE/Edge */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .gallery-img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+  }  

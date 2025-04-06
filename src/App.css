@@ -5,6 +5,16 @@
   text-align: center;
 }
 
+#collage-image-container {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#collage-image {
+    width: 100%;
+    height: auto;
+}
+
 .spotify-button {
   background-color: #1db954;
   color: white;

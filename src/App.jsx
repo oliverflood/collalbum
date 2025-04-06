@@ -1,5 +1,6 @@
 
   import './App.css'
+  import AutoScrollGallery from './AutoScrollGallery.jsx';
   import { useEffect, useRef } from 'react';
 
   const clientId = "c7d69233368e4745b7032ab8837ae6d4";
@@ -90,20 +91,58 @@
       const code = urlParams.get('code');
     
       const fetchTopTracks = async (token) => {
-        const res = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=20", {
+        const artDictionary = new Map()
+
+        var attempts = 0
+
+        while (artDictionary.size < 25 && attempts < 6) {
+          const response = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=50&offset="+ (attempts * 50).toString() +"&time_range=long_term", {
+              method: "GET",
+              headers: {
+                  "Authorization": "Bearer " + access_token
+              }
+          });
+
+
+          const data = await response.json() 
+          data.items.forEach(element => {
+            if (!artDictionary[element.album.images[0].url] && artDictionary.size < 25) {
+              artDictionary.set(element.album.images[0].url, 1)
+            } 
+          });
+
+          attempts += 1
+        }
+
+        let image_urls = Array.from(artDictionary.keys())
+        console.log(image_urls)
+        while (image_urls.length < 25) {
+          let randomIndex = Math.floor(Math.random() * image_urls.length)
+          image_urls.push(image_urls[randomIndex])
+        }
+
+        var response_object = {images: image_urls}
+
+        const response2 = await fetch("http://localhost:4000/generateImage", {
+          method: "POST",
           headers: {
-            Authorization: "Bearer " + token,
+              "Content-Type": "application/json"
           },
-        });
-    
-        const data = await res.json();
-        console.log("Top tracks:", data);
+          body: JSON.stringify(response_object)
+        })
+        const data2 = await response2.json()
+        
+        console.log(data2.image_address)
+        document.getElementById("collage-image").src = data2.image_address
       };
+
+
+
     
       const init = async () => {
         if (access_token) {
           console.log("Access token exists! Fetching top tracks...");
-          fetchTopTracks(access_token);
+          await fetchTopTracks(access_token);
         } else if (code) {
           console.log("Access token missing! Getting token...")
           await getToken(code);
@@ -112,7 +151,7 @@
           if (newToken) {
             console.log("New access token generated! Fetching now...")
             window.history.replaceState({}, document.title, '/'); // remove code from URL
-            fetchTopTracks(newToken);
+            await fetchTopTracks(newToken);
           }
         } else {
           console.log("No token or code — waiting for user to click login");
@@ -124,21 +163,11 @@
 
     return (
       <>
-        <nav>
-          <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Chromakopia_CD_cover.jpg" />
-        </nav>
-
-        <div className="scroll-container">
-          {[1, 2, 3, 4, 5].map((_, i) => (
-            <img
-              key={i}
-              src="https://i.scdn.co/image/ab67616d0000b2736b219c8d8462bfe254a20469"
-              alt="Album Cover Art"
-              height="320px"
-              width="320px"
-            />
-          ))}
+        <div id="collage-image-container">
+          <img id="collage-image" src="https://upload.wikimedia.org/wikipedia/en/5/5b/Chromakopia_CD_cover.jpg" />
         </div>
+
+        <AutoScrollGallery />
 
         <button onClick={login} className="spotify-button">
           <img

@@ -1,6 +1,6 @@
 const access_token = localStorage.getItem('access_token')
 const clientId = '867d29a6e7e9406c9ebe3efd80da2f06';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://localhost:4000/';
 
 const generateRandomString = (length) => {
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -115,7 +115,7 @@ const redirectDetermination = async () => {
 
     response_object = {images: image_urls}
 
-    const response2 = await fetch("http://localhost:3000/generateImage", {
+    const response2 = await fetch("http://localhost:4000/generateImage", {
       method: "POST",
       headers: {
           "Content-Type": "application/json"
