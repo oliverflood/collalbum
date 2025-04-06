@@ -13,11 +13,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename)
 
 app.use(express.json())
-app.use('/public', express.static(path.join(__dirname, '/public')));
+app.use('/', express.static(path.join(__dirname, '/dist')));
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/main.html'));
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 app.post("/generateImage", (req, res) => {
@@ -27,14 +27,14 @@ app.post("/generateImage", (req, res) => {
         axios.post("http://localhost:5000/generate_collage", data, {responseType: 'stream'})
         .then((response) => {
             const id = uuidv4() 
-            const savePath = path.resolve(__dirname, "public/images", id+".jpg")
+            const savePath = path.resolve(__dirname, "dist/images", id+".jpg")
             const writer = fs.createWriteStream(savePath);
 
             response.data.pipe(writer);
 
             writer.on('finish', () => {
                 console.log('Image downloaded and saved successfully!');
-                res.json({image_address: "http://localhost:4000/public/images/"+id+".jpg"})
+                res.json({image_address: "http://localhost:4000/images/"+id+".jpg"})
             });
         })
     }
