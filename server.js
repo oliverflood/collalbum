@@ -34,7 +34,7 @@ app.post("/generateImage", (req, res) => {
 
             writer.on('finish', () => {
                 console.log('Image downloaded and saved successfully!');
-                res.json({image_address: "http://localhost:4000/images/"+id+".jpg"})
+                res.json({image_address: "https://collalbum.guessmybuild.com/images/"+id+".jpg"})
             });
         })
     }

@@ -117,7 +117,7 @@
 
       var attempts = 0
 
-      while (attempts < 6) {
+      while (attempts < 6 && artDictionary.size <= 49 ) {
         const response = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=50&offset="+ (attempts * 50).toString() +"&time_range=long_term", {
             method: "GET",
             headers: {
@@ -127,7 +127,7 @@
 
         const data = await response.json() 
         data.items.forEach(element => {
-          if (!artDictionary[element.album.images[0].url]) {
+          if (!artDictionary[element.album.images[0].url] && artDictionary.size <= 49) {
             artDictionary.set(element.album.images[0].url, 1)
           } 
         });
@@ -137,7 +137,7 @@
 
       let image_urls = Array.from(artDictionary.keys())
       console.log(image_urls)
-      while (image_urls.length < 36) {
+      while (image_urls.length <= 49) {
         let randomIndex = Math.floor(Math.random() * image_urls.length)
         image_urls.push(image_urls[randomIndex])
       }
