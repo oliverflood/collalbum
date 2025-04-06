@@ -1,9 +1,11 @@
 
   import './App.css'
-  import { useEffect } from 'react';
+  import { useEffect, useRef } from 'react';
 
   const clientId = "c7d69233368e4745b7032ab8837ae6d4";
   const redirectUri = "http://localhost:3000/";
+
+  let hasRunRef = false;
 
   const generateRandomString = (length) => {
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -80,40 +82,43 @@
     };
 
     useEffect(() => {
-
+      if (hasRunRef) return;
+      hasRunRef = true;
+    
+      const access_token = localStorage.getItem('access_token');
       const urlParams = new URLSearchParams(window.location.search);
       const code = urlParams.get('code');
-      if (code == null){
-        console.log('Error: code is not set in URL')
-        return;
-      }
-
-      const fetchTopTracks = async (access_token) => {
-        const res = await fetch(
-          "https://api.spotify.com/v1/me/top/tracks?limit=20",
-          {
-            headers: {
-              Authorization: "Bearer " + access_token,
-            },
-          }
-        );
-
+    
+      const fetchTopTracks = async (token) => {
+        const res = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=20", {
+          headers: {
+            Authorization: "Bearer " + token,
+          },
+        });
+    
         const data = await res.json();
         console.log("Top tracks:", data);
       };
-
+    
       const init = async () => {
-        // let access_token = localStorage.getItem("access_token");
-        console.log('access_token: ' + access_token);
-        await getToken(code);
-        console.log('after access_token: ' + access_token);
-          access_token = localStorage.getItem("access_token");
+        if (access_token) {
+          console.log("Access token exists! Fetching top tracks...");
+          fetchTopTracks(access_token);
+        } else if (code) {
+          console.log("Access token missing! Getting token...")
+          await getToken(code);
           
-          if (access_token) {
-            fetchTopTracks(access_token);
+          const newToken = localStorage.getItem('access_token');
+          if (newToken) {
+            console.log("New access token generated! Fetching now...")
+            window.history.replaceState({}, document.title, '/'); // remove code from URL
+            fetchTopTracks(newToken);
           }
+        } else {
+          console.log("No token or code — waiting for user to click login");
+        }
       };
-
+    
       init();
     }, []);
 
