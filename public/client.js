@@ -2,10 +2,6 @@ const access_token = localStorage.getItem('access_token')
 const clientId = '867d29a6e7e9406c9ebe3efd80da2f06';
 const redirectUri = 'http://localhost:3000/';
 
-
-
-
-
 const generateRandomString = (length) => {
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const values = crypto.getRandomValues(new Uint8Array(length));
@@ -95,9 +91,23 @@ const redirectDetermination = async () => {
     }).then((response) => { 
         return response.json() 
     }).then((data) => {
+        image_urls = []
         data.items.forEach(element => {
-            console.log(element.album.images[0])
+            image_urls.push(element.album.images[0])
         });
+
+        response_object = {images: image_urls}
+
+        fetch("/generateImage", {
+          method: "POST",
+          body: JSON.stringify(response_object)
+        })
+        .then((response) => {
+          return response.json()
+        }).then((data) => {
+          console.log(data.image_address)
+        })
+
     })
   } else {
 
