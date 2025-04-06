@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from io import BytesIO
-from collage_utils import snap_images_x, snap_images_y, center_crop_fraction, add_position_dependent_jitter
-from image_embedder import image_urls_to_vectors
+from .collage_utils import snap_images_x, snap_images_y, center_crop_fraction, add_position_dependent_jitter
+from .image_embedder import image_urls_to_vectors
 
 
 SAVE_DIR = "collages"

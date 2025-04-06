@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, send_file
-from collage_from_embeddings import generate_collage_from_image_urls
+from .collage_from_embeddings import generate_collage_from_image_urls
 from PIL import Image
 import requests
 from io import BytesIO

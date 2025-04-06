@@ -1,5 +1,5 @@
-from collage_from_embeddings import generate_collage_from_image_urls
-from server import load_images_from_urls
+from .collage_from_embeddings import generate_collage_from_image_urls
+from .server import load_images_from_urls
 from PIL import Image
 import numpy as np
 
