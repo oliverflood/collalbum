@@ -7,7 +7,7 @@ from sklearn.decomposition import PCA
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from io import BytesIO
 from collage_utils import snap_images_x, snap_images_y, center_crop_fraction, add_position_dependent_jitter
-from image_embedder import image_url_to_vector
+from image_embedder import image_urls_to_vectors
 
 
 SAVE_DIR = "collages"
@@ -71,7 +71,7 @@ def generate_collage_from_image_urls(image_urls: list[str], image_loader) -> str
     print("Fetching images")
     images = image_loader(image_urls)
 
-    print("Computing sentence embeddings")
-    embeddings = np.array([image_url_to_vector(url) for url in image_urls], dtype=np.float32)
+    print("Computing semantic + visual embeddings (batched)")
+    embeddings = image_urls_to_vectors(image_urls)
 
     return generate_collage_from_embeddings(embeddings, images)
