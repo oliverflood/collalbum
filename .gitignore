@@ -4,6 +4,7 @@
 data/
 cifar10_sample_images/
 STL10_sample_images/
+url_sample_images/
 
 # Ignore generated collages
 collages/
