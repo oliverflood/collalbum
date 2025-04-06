@@ -1,27 +1,31 @@
-import os
+from flask import Flask, request, jsonify
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 import uuid
+import requests
+from io import BytesIO
+import os
+from flask import send_file
 
-
-GRID_SIZE = 10
+GRID_SIZE = 5
 NUM_IMAGES = GRID_SIZE * GRID_SIZE
+SAVE_DIR = "collages"
 
-def load_and_flatten_images(folder, size=(64, 64), max_images=NUM_IMAGES):
-    image_paths = [os.path.join(folder, f) for f in os.listdir(folder)
-                   if f.lower().endswith(('.jpg', '.png'))][:max_images]
+app = Flask(__name__)
+
+def load_images_from_urls(url_list):
     images = []
-    vectors = []
-
-    for path in image_paths:
-        img = Image.open(path).convert('RGB').resize(size)
+    for url in url_list:
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content)).convert("RGB")
         images.append(img)
-        vectors.append(np.asarray(img).flatten())
+    return images
 
-    return images, np.array(vectors)
+def flatten_images(images):
+    return np.array([np.asarray(img.resize((32, 32))).flatten() for img in images])
 
 def reduce_with_pca(data, n_components=2):
     pca = PCA(n_components=n_components)
@@ -30,56 +34,63 @@ def reduce_with_pca(data, n_components=2):
 def snap_images_x(coords, grid_size=GRID_SIZE):
     coords_copy = coords.copy()
     sorted_indices = np.argsort(coords_copy[:, 0])
-
     snapped = np.zeros_like(coords_copy)
-
     for i in range(coords_copy.shape[0]):
         bucket = i // grid_size
         snapped[sorted_indices[i], 0] = bucket
         snapped[sorted_indices[i], 1] = coords_copy[sorted_indices[i], 1]
-
     return snapped
 
 def snap_images_y(coords, grid_size=GRID_SIZE):
     coords_copy = coords.copy()
-
     for bucket in range(grid_size):
         bucket_indices = np.where(coords_copy[:, 0] == bucket)[0]
         sorted_y = bucket_indices[np.argsort(-coords_copy[bucket_indices, 1])]
-
         for new_y, idx in enumerate(sorted_y):
             coords_copy[idx, 1] = grid_size - 1 - new_y
-
     return coords_copy
 
-def plot_images_on_canvas(images, coords, zoom=0.6, save_dir="collages"):
+def plot_images_on_canvas(images, coords, save_dir=SAVE_DIR):
     fig, ax = plt.subplots(figsize=(10, 10))
-    ax.set_xlim(coords[:, 0].min() - 1, coords[:, 0].max() + 1)
-    ax.set_ylim(coords[:, 1].min() - 1, coords[:, 1].max() + 1)
+    ax.set_xlim(coords[:, 0].min(), coords[:, 0].max())
+    ax.set_ylim(coords[:, 1].min(), coords[:, 1].max())
     ax.axis('off')
 
+    zoom = 1.1 / GRID_SIZE
     for (x, y), img in zip(coords, images):
-        imagebox = OffsetImage(img.resize((128, 128)), zoom=zoom)
+        imagebox = OffsetImage(img.resize((640, 640)), zoom=zoom)
         ab = AnnotationBbox(imagebox, (x, y), frameon=False)
         ax.add_artist(ab)
 
-    if save_dir:
-        os.makedirs(save_dir, exist_ok=True)
-        unique_id = uuid.uuid4().hex[:6]  # short 6-char ID
-        save_path = os.path.join(save_dir, f"collage_{unique_id}.png")
-        plt.tight_layout()
-        plt.savefig(save_path, dpi=300, bbox_inches='tight')
-        print(f'Saved collage to {save_path}')
+    os.makedirs(save_dir, exist_ok=True)
+    unique_id = uuid.uuid4().hex[:6]
+    save_path = os.path.join(save_dir, f'collage_{unique_id}.png')
+    plt.savefig(save_path, dpi=300, bbox_inches='tight', pad_inches=0, transparent=True)
+    plt.close(fig)
 
-folder_path = "STL10_sample_images"
-images, image_vectors = load_and_flatten_images(folder_path)
-coords = reduce_with_pca(image_vectors)
-plot_images_on_canvas(images, coords, save_dir=None)
+    print(f"Saved collage to {save_path}")
+    return save_path
 
-snapped_coords = snap_images_x(coords)
-plot_images_on_canvas(images, snapped_coords, save_dir=None)
+@app.route('/generate_collage', methods=['POST'])
+def generate_collage():
+    data = request.get_json()
+    image_urls = data.get('images', [])
 
-snapped_coords = snap_images_y(snapped_coords)
-plot_images_on_canvas(images, snapped_coords)
+    if len(image_urls) != NUM_IMAGES:
+        return jsonify({"error": f"Expected {NUM_IMAGES} images, got {len(image_urls)}"}), 400
 
-plt.show()
+    try:
+        images = load_images_from_urls(image_urls)
+        image_vectors = flatten_images(images)
+        coords = reduce_with_pca(image_vectors)
+        coords = snap_images_x(coords)
+        coords = snap_images_y(coords)
+        image_path = plot_images_on_canvas(images, coords)
+        # return jsonify({"image_path": image_path})
+        return send_file(image_path, mimetype='image/png')
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
