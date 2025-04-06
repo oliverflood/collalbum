@@ -86,11 +86,22 @@ def image_urls_to_visual_vectors(image_urls: list[str]) -> np.ndarray:
     flattened = flatten_images(images)
     return flattened.astype(np.float32)
 
+def normalize_vectors(vectors: np.ndarray) -> np.ndarray:
+    norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+    return vectors / np.clip(norms, a_min=1e-8, a_max=None)
+
 def image_urls_to_vectors(image_urls: list[str]) -> np.ndarray:
     semantic_vecs = image_urls_to_semantic_vectors(image_urls)
     visual_vecs = image_urls_to_visual_vectors(image_urls)
 
-    print(f"semantic_vecs.shape {semantic_vecs.shape}")
-    print(f"visual_vecs.shape {visual_vecs.shape}")
+    # Fixes bug of semantic vecs being overpowered by visual vecs
+    semantic_vecs = normalize_vectors(semantic_vecs)
+    visual_vecs = normalize_vectors(visual_vecs)
+
+    # print(f"semantic_vecs.shape {semantic_vecs.shape}")
+    # print(f"visual_vecs.shape {visual_vecs.shape}")
+
+    # print(f"semantic_vecs {semantic_vecs}")
+    # print(f"visual_vecs {visual_vecs}")
 
     return np.concatenate([semantic_vecs, visual_vecs], axis=1)
