@@ -1,5 +1,8 @@
 /node_modules
 
+# NO API KEY FOR YOU
+.env
+
 # Ignore downloaded datasets
 data/
 cifar10_sample_images/
