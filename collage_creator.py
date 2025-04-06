@@ -8,11 +8,12 @@ import uuid
 import requests
 from io import BytesIO
 import os
+import math
 
-### Config ###
+##########
+# Config #
+##########
 
-GRID_SIZE = 5
-NUM_IMAGES = GRID_SIZE * GRID_SIZE
 SAVE_DIR = "collages"
 IMAGE_SIZE = (32, 32)
 CANVAS_IMAGE_SIZE = (640, 640)
@@ -20,8 +21,9 @@ CANVAS_IMAGE_SIZE = (640, 640)
 app = Flask(__name__)
 
 
-
-### Image I/O Utilities ###
+#######################
+# Image I/O Utilities #
+#######################
 
 def load_images_from_urls(url_list):
     """
@@ -47,8 +49,9 @@ def save_images(images, save_dir="url_sample_images", prefix="img"):
         img.save(path)
 
 
-
-### Image Processing ###
+####################
+# Image Processing #
+####################
 
 def flatten_images(images, size=IMAGE_SIZE):
     """
@@ -64,7 +67,7 @@ def reduce_with_pca(data, n_components=2):
     pca = PCA(n_components=n_components)
     return pca.fit_transform(data)
 
-def snap_images_x(coords, grid_size=GRID_SIZE):
+def snap_images_x(coords, grid_size):
     """
     Sorts and assigns x-grid positions based on PCA x-coords.
     """
@@ -79,7 +82,7 @@ def snap_images_x(coords, grid_size=GRID_SIZE):
 
     return snapped
 
-def snap_images_y(coords, grid_size=GRID_SIZE):
+def snap_images_y(coords, grid_size):
     """
     For each x-bucket, sorts y-coordinates and assigns grid positions (top to bottom).
     """
@@ -94,115 +97,126 @@ def snap_images_y(coords, grid_size=GRID_SIZE):
 
     return coords_copy
 
-# def center_crop_fraction(img, fraction=0.8):
-#     """
-#     Center-crops an image to the specified fraction of its original size.
-#     """
-#     width, height = img.size
-#     new_width = int(width * fraction)
-#     new_height = int(height * fraction)
-
-#     left = (width - new_width) // 2
-#     top = (height - new_height) // 2
-#     right = left + new_width
-#     bottom = top + new_height
-
-#     return img.crop((left, top, right, bottom))
-
-
-### Visualization ###
-
-def plot_images_on_canvas(images, coords, save_dir=SAVE_DIR):
+def center_crop_fraction(img, fraction=0.8):
     """
-    Plots images on a canvas based on 2D coordinates and saves to disk.
-    Returns the save path of the generated collage image.
+    Center-crops an image to the specified fraction of its original size.
+    """
+    width, height = img.size
+    new_width = int(width * fraction)
+    new_height = int(height * fraction)
+
+    left = (width - new_width) // 2
+    top = (height - new_height) // 2
+    right = left + new_width
+    bottom = top + new_height
+
+    return img.crop((left, top, right, bottom))
+
+def add_random_jitter(coords, jitter_strength=0.2):
+    """
+    Adds small random noise to each (x, y) coordinate.
+    Jitter strength controls how far from the grid point the image can drift.
+    """
+    noise = np.random.uniform(-jitter_strength, jitter_strength, coords.shape)
+    return coords + noise
+
+
+def add_position_dependent_jitter(coords, jitter_strength=0.4):
+    """
+    Adds jitter to each coordinate, with stronger jitter near the center and less near the edges.
+    """
+    coords = coords.copy()
+    center = coords.mean(axis=0)
+    max_dist = np.linalg.norm(coords - center, axis=1).max()
+
+    for i, (x, y) in enumerate(coords):
+        dist_to_center = np.linalg.norm([x - center[0], y - center[1]])
+        scale = 1 - (dist_to_center / max_dist)  # closer to center → closer to 1
+        jitter = np.random.uniform(-jitter_strength, jitter_strength, 2) * scale
+        coords[i] += jitter
+
+    return coords
+
+
+#################
+# Visualization #
+#################
+
+def plot_images_on_canvas(images, coords, grid_size, save_dir=SAVE_DIR, crop_fraction=1.0):
+    """
+    Plots images on a canvas based on 2D coordinates, crops the final image,
+    and saves it to disk. Returns the path to the saved image.
     """
     fig, ax = plt.subplots(figsize=(10, 10))
     ax.set_xlim(coords[:, 0].min(), coords[:, 0].max())
     ax.set_ylim(coords[:, 1].min(), coords[:, 1].max())
     ax.axis('off')
 
-    base_zoom = 1.1 / GRID_SIZE
+    base_zoom = 1.1 / grid_size
     for i, ((x, y), img) in enumerate(zip(coords, images)):
-        size_factor = 2 - 1 * (i / NUM_IMAGES)
+        size_factor = 1.82 - 1 * (i / (grid_size * grid_size))
         imagebox = OffsetImage(img.resize(CANVAS_IMAGE_SIZE), zoom=base_zoom * size_factor)
         ab = AnnotationBbox(imagebox, (x, y), frameon=False)
         ax.add_artist(ab)
 
+    # Save figure to memory (buffer)
+    buf = BytesIO()
+    plt.savefig(buf, format='png', dpi=100, bbox_inches='tight', pad_inches=0.0, transparent=True)
+    plt.close(fig)
+    buf.seek(0)
+
+    # Open it as PIL image
+    collage_img = Image.open(buf).convert("RGB")
+
+    if crop_fraction < 1.0:
+        collage_img = center_crop_fraction(collage_img, crop_fraction)
+
+    # Save final cropped collage
     os.makedirs(save_dir, exist_ok=True)
     unique_id = uuid.uuid4().hex[:6]
-    save_path = os.path.join(save_dir, f'collage_{unique_id}.png')
+    save_path = os.path.join(save_dir, f'collage_{unique_id}.jpg')
+    collage_img.save(save_path, format='JPEG', quality=85)
 
-    plt.savefig(save_path, dpi=100, bbox_inches='tight', pad_inches=0.0, transparent=True)
-    # plt.savefig(save_path, dpi=300, bbox_inches='tight', pad_inches=0.0)
-    plt.close(fig)
-
-    print(f'Saved collage to {save_path}')
+    print(f"Saved cropped collage to {save_path}")
     return save_path
 
 
-
-### Flask Route ###
+###############
+# Flask Route #
+###############
 
 @app.route('/generate_collage', methods=['POST'])
 def generate_collage():
     """
     Flask endpoint that accepts a JSON payload of image URLs,
-    generates a PCA-based collage layout, and returns the resulting image.
-
-    Method: POST
-    Endpoint: /generate_collage
-    Content-Type: application/json
-
-    Args (JSON payload):
-        {
-            "images": [
-                "https://i.scdn.co/image/ab67616d0000b273...",
-                "https://i.scdn.co/image/ab67616d0000b273...",
-                ...
-            ]
-        }
-
-    Returns:
-        On success: PNG image file (binary) with Content-Type: image/png
-        On failure: JSON object with error message and HTTP 400 or 500 status
-
-    Example `curl` request:
-        curl -X POST http://localhost:5000/generate_collage \
-            -H "Content-Type: application/json" \
-            -d '{
-                  "images": [
-                    "https://i.scdn.co/image/ab67616d0000b273...",
-                    "https://i.scdn.co/image/ab67616d0000b273...",
-                    ...
-                  ]
-                }' \
-            --output result.png
-
-    Notes:
-        The number of image URLs must match the configured NUM_IMAGES (default: 25).
-        The response is a binary PNG file and not a JSON object.
+    dynamically determines grid size, generates collage, and returns PNG.
     """
     data = request.get_json()
     image_urls = data.get('images', [])
 
-    if len(image_urls) != NUM_IMAGES:
-        return jsonify({'error': f'Expected {NUM_IMAGES} images, got {len(image_urls)}'}), 400
+    if not image_urls or len(image_urls) < 4:
+        return jsonify({'error': 'Please provide at least 4 image URLs'}), 400
 
-    # try:
-    images = load_images_from_urls(image_urls)
-    # save_images(images)  # Optional: comment this out if not needed (used to "cache")
-    image_vectors = flatten_images(images)
-    coords = reduce_with_pca(image_vectors)
-    coords = snap_images_x(coords)
-    coords = snap_images_y(coords)
-    image_path = plot_images_on_canvas(images, coords)
+    # Compute grid size dynamically
+    grid_size = int(math.floor(math.sqrt(len(image_urls))))
+    num_images = grid_size * grid_size
+    image_urls = image_urls[:num_images]
 
-    return send_file(image_path, mimetype='image/png')
+    print(f'Using GRID_SIZE={grid_size}, NUM_IMAGES={num_images}')
 
-    # except Exception as e:
-    #     print("Exception occurred:", repr(e))
-    #     return jsonify({'error': str(e)}), 500
+    try:
+        images = load_images_from_urls(image_urls)
+        image_vectors = flatten_images(images)
+        coords = reduce_with_pca(image_vectors)
+        coords = snap_images_x(coords, grid_size)
+        coords = snap_images_y(coords, grid_size)
+        image_path = plot_images_on_canvas(images, coords, grid_size)
+
+        return send_file(image_path, mimetype='image/png')
+
+    except Exception as e:
+        print("Error:", e)
+        return jsonify({'error': str(e)}), 500
 
 
 
@@ -250,18 +264,24 @@ def run_collage_generation_test():
         "https://i.scdn.co/image/ab67616d0000b2733d98a0ae7c78a3a9babaf8af"
     ]
 
+    grid_size = int(math.floor(math.sqrt(len(image_urls))))
+    num_images = grid_size * grid_size
+    image_urls = image_urls[:num_images]
+
     print("Running local test of collage generation with test image list...")
     images = load_images_from_urls(image_urls)
     image_vectors = flatten_images(images)
     coords = reduce_with_pca(image_vectors)
-    coords = snap_images_x(coords)
-    coords = snap_images_y(coords)
-    image_path = plot_images_on_canvas(images, coords)
+    coords = snap_images_x(coords, grid_size)
+    coords = snap_images_y(coords, grid_size)
+    coords = add_position_dependent_jitter(coords, jitter_strength=0.25)
+    image_path = plot_images_on_canvas(images, coords[:, [1, 0]], grid_size, crop_fraction=0.85)
     print("Collage generated and saved to:", image_path)
 
 
-
-### Run Server ###
+##############
+# Run Server #
+##############
 
 if __name__ == '__main__':
     app.run(debug=True)
