@@ -60,3 +60,4 @@ def image_url_to_vector(image_url: str) -> list[float]:
         return embedding
     else:
         raise Exception(f"Google API error: {response.status_code} - {response.text}")
+

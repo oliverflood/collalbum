@@ -3,11 +3,6 @@ from groq import Groq
 from dotenv import load_dotenv
 from google.cloud import aiplatform
 
-
-##############################
-# Groq sentence descriptions #
-##############################
-
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
