@@ -90,7 +90,7 @@ def flatten_images(images: list[Image.Image], size=IMAGE_SIZE) -> np.ndarray:
 
 def image_url_to_visual_vector(image_url: str) -> np.ndarray:
     if image_url in visual_cache:
-        print(f'used visual cache for image {image_url}')
+        # print(f'used visual cache for image {image_url}')
         return visual_cache[image_url]
 
     response = requests.get(image_url)
