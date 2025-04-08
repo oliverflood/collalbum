@@ -14,7 +14,10 @@ const __dirname = path.dirname(__filename)
 
 app.use(express.json())
 app.use('/', express.static(path.join(__dirname, '/dist')));
-app.use(cors())
+app.use(cors()); 
+
+// server.setTimeout(180000); // 3 minutes in milliseconds
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
@@ -24,7 +27,7 @@ app.post("/generateImage", (req, res) => {
     const sendRequest = async () => {
         const data = req.body
         console.log(data)
-        axios.post("http://localhost:5000/generate_collage", data, {responseType: 'stream'})
+        axios.post("http://localhost:5000/generate_collage", data, {timeout:180000, responseType: 'stream'})
         .then((response) => {
             const id = uuidv4() 
             const savePath = path.resolve(__dirname, "dist/images", id+".jpg")
