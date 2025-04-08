@@ -41,7 +41,7 @@ def plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.9, zorder_i
         ax.add_artist(ab)
 
     buf = BytesIO()
-    plt.savefig(buf, format='png', dpi=100, bbox_inches='tight', pad_inches=0.0, transparent=True)
+    plt.savefig(buf, format='png', dpi=250, bbox_inches='tight', pad_inches=0.0, transparent=True)
     plt.close(fig)
     buf.seek(0)
     collage_img = Image.open(buf).convert("RGB")
