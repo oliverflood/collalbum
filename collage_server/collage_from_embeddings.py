@@ -11,8 +11,8 @@ from io import BytesIO
 from .collage_utils import snap_images_x, snap_images_y, center_crop_fraction, add_position_dependent_jitter
 from .image_embedder import image_urls_to_vectors
 
-
-SAVE_DIR = "collages"
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+SAVE_DIR = os.path.join(PROJECT_ROOT, "collages")
 CANVAS_IMAGE_SIZE = (640, 640)
 
 def reduce_with_pca(data, n_components=2):
@@ -41,7 +41,7 @@ def plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.9, zorder_i
         ax.add_artist(ab)
 
     buf = BytesIO()
-    plt.savefig(buf, format='png', dpi=100, bbox_inches='tight', pad_inches=0.0, transparent=True)
+    plt.savefig(buf, format='png', dpi=250, bbox_inches='tight', pad_inches=0.0, transparent=True)
     plt.close(fig)
     buf.seek(0)
     collage_img = Image.open(buf).convert("RGB")
@@ -51,6 +51,8 @@ def plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.9, zorder_i
 
     os.makedirs(SAVE_DIR, exist_ok=True)
     path = os.path.join(SAVE_DIR, f"collage_{uuid.uuid4().hex[:6]}.jpg")
+    print(f"Saving collage to: {path}")
+
     collage_img.save(path, format="JPEG", quality=85)
     return path
 
