@@ -1,1 +1,51 @@
 /node_modules
+/dist
+
+/semantic_cache
+
+# NO API KEY FOR YOU
+.env
+
+# Ignore downloaded datasets
+data/
+cifar10_sample_images/
+STL10_sample_images/
+url_sample_images/
+
+# Ignore generated collages
+collages/
+old_collages/
+
+# Ignore common output and cache files (in case)
+*.pyc
+__pycache__/
+*.ipynb_checkpoints/
+
+# Ignore OS files (in case)
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,3283 @@
+https://i.scdn.co/image/ab67616d0000b2736b219c8d8462bfe254a20469
+https://i.scdn.co/image/ab67616d0000b273a8d74e789b99484e0e169001
+https://i.scdn.co/image/ab67616d0000b2735998097d9467eccb3e99b8c1
+https://i.scdn.co/image/ab67616d0000b273b2592bea12d840fd096ef965
+https://i.scdn.co/image/ab67616d0000b27326d64b6150aa3d9b6b67d857
+
+{
+  "albums": [
+    {
+      "album_type": "album",
+      "total_tracks": 30,
+      "is_playable": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0fSfkmx0tdPqFYkJuNX74a"
+      },
+      "href": "https://api.spotify.com/v1/albums/0fSfkmx0tdPqFYkJuNX74a?market=US&locale=en-US%2Cen%3Bq%3D0.9",
+      "id": "0fSfkmx0tdPqFYkJuNX74a",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab67616d0000b2736b219c8d8462bfe254a20469",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d00001e026b219c8d8462bfe254a20469",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d000048516b219c8d8462bfe254a20469",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "name": "MUSIC",
+      "release_date": "2025-03-14",
+      "release_date_precision": "day",
+      "type": "album",
+      "uri": "spotify:album:0fSfkmx0tdPqFYkJuNX74a",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+          },
+          "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+          "id": "699OTQXzgjhIYAHMy9RyPD",
+          "name": "Playboi Carti",
+          "type": "artist",
+          "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+        }
+      ],
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/0fSfkmx0tdPqFYkJuNX74a/tracks?offset=0&limit=50&market=US&locale=en-US,en;q%3D0.9",
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 30,
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 161738,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3j3SfV4hAcR4XjCvW393Gr"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3j3SfV4hAcR4XjCvW393Gr",
+            "id": "3j3SfV4hAcR4XjCvW393Gr",
+            "is_playable": true,
+            "name": "POP OUT",
+            "preview_url": null,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:3j3SfV4hAcR4XjCvW393Gr",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+                },
+                "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+                "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+                "name": "Travis Scott",
+                "type": "artist",
+                "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 173320,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3VdooJLOy4tLxKpnn46SMP"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3VdooJLOy4tLxKpnn46SMP",
+            "id": "3VdooJLOy4tLxKpnn46SMP",
+            "is_playable": true,
+            "name": "CRUSH (with Travis Scott)",
+            "preview_url": null,
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:3VdooJLOy4tLxKpnn46SMP",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 112992,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/00iLTetTLAeImmBlh6jOJh"
+            },
+            "href": "https://api.spotify.com/v1/tracks/00iLTetTLAeImmBlh6jOJh",
+            "id": "00iLTetTLAeImmBlh6jOJh",
+            "is_playable": true,
+            "name": "K POP",
+            "preview_url": null,
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:00iLTetTLAeImmBlh6jOJh",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 183928,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6iycYUk3oB0NPMdaDUrN1w"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6iycYUk3oB0NPMdaDUrN1w",
+            "id": "6iycYUk3oB0NPMdaDUrN1w",
+            "is_playable": true,
+            "name": "EVIL J0RDAN",
+            "preview_url": null,
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:6iycYUk3oB0NPMdaDUrN1w",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 156293,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3WRUvGqySBZC6RkB5c2w1S"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3WRUvGqySBZC6RkB5c2w1S",
+            "id": "3WRUvGqySBZC6RkB5c2w1S",
+            "is_playable": true,
+            "name": "MOJO JOJO",
+            "preview_url": null,
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:3WRUvGqySBZC6RkB5c2w1S",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+                },
+                "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+                "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+                "name": "Travis Scott",
+                "type": "artist",
+                "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 185706,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5SIvP6TdWc9DNvKbENjnYc"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5SIvP6TdWc9DNvKbENjnYc",
+            "id": "5SIvP6TdWc9DNvKbENjnYc",
+            "is_playable": true,
+            "name": "PHILLY (with Travis Scott)",
+            "preview_url": null,
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:5SIvP6TdWc9DNvKbENjnYc",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 107933,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3lAEHk0eZzMKtCUFLXz8Ln"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3lAEHk0eZzMKtCUFLXz8Ln",
+            "id": "3lAEHk0eZzMKtCUFLXz8Ln",
+            "is_playable": true,
+            "name": "RADAR",
+            "preview_url": null,
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:3lAEHk0eZzMKtCUFLXz8Ln",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"
+                },
+                "href": "https://api.spotify.com/v1/artists/1Xyo4u8uXC1ZmMpatF05PJ",
+                "id": "1Xyo4u8uXC1ZmMpatF05PJ",
+                "name": "The Weeknd",
+                "type": "artist",
+                "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 209680,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/68qeaZhtMZ6abrJCYt6nQn"
+            },
+            "href": "https://api.spotify.com/v1/tracks/68qeaZhtMZ6abrJCYt6nQn",
+            "id": "68qeaZhtMZ6abrJCYt6nQn",
+            "is_playable": true,
+            "name": "RATHER LIE (with The Weeknd)",
+            "preview_url": null,
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:68qeaZhtMZ6abrJCYt6nQn",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 106753,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/79mFFAOYcG8ZF6AN1JecAL"
+            },
+            "href": "https://api.spotify.com/v1/tracks/79mFFAOYcG8ZF6AN1JecAL",
+            "id": "79mFFAOYcG8ZF6AN1JecAL",
+            "is_playable": true,
+            "name": "FINE SHIT",
+            "preview_url": null,
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:79mFFAOYcG8ZF6AN1JecAL",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+                },
+                "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+                "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+                "name": "Kendrick Lamar",
+                "type": "artist",
+                "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5ZS223C6JyBfXasXxrRqOk"
+                },
+                "href": "https://api.spotify.com/v1/artists/5ZS223C6JyBfXasXxrRqOk",
+                "id": "5ZS223C6JyBfXasXxrRqOk",
+                "name": "Jhené Aiko",
+                "type": "artist",
+                "uri": "spotify:artist:5ZS223C6JyBfXasXxrRqOk"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 190053,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0rNgWFQJtfttOYIHfDOHCg"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0rNgWFQJtfttOYIHfDOHCg",
+            "id": "0rNgWFQJtfttOYIHfDOHCg",
+            "is_playable": true,
+            "name": "BACKD00R (feat. Kendrick Lamar & Jhené Aiko)",
+            "preview_url": null,
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:0rNgWFQJtfttOYIHfDOHCg",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2p1fiYHYiXz9qi0JJyxBzN"
+                },
+                "href": "https://api.spotify.com/v1/artists/2p1fiYHYiXz9qi0JJyxBzN",
+                "id": "2p1fiYHYiXz9qi0JJyxBzN",
+                "name": "Skepta",
+                "type": "artist",
+                "uri": "spotify:artist:2p1fiYHYiXz9qi0JJyxBzN"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 135275,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4evMMKc2HD6fV9slMfgkMx"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4evMMKc2HD6fV9slMfgkMx",
+            "id": "4evMMKc2HD6fV9slMfgkMx",
+            "is_playable": true,
+            "name": "TOXIC (with Skepta)",
+            "preview_url": null,
+            "track_number": 11,
+            "type": "track",
+            "uri": "spotify:track:4evMMKc2HD6fV9slMfgkMx",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 154285,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2JJFJEvFSWyQ59Pwl2gqSF"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2JJFJEvFSWyQ59Pwl2gqSF",
+            "id": "2JJFJEvFSWyQ59Pwl2gqSF",
+            "is_playable": true,
+            "name": "MUNYUN",
+            "preview_url": null,
+            "track_number": 12,
+            "type": "track",
+            "uri": "spotify:track:2JJFJEvFSWyQ59Pwl2gqSF",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 147692,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7xAvtuHf8nGi5OtXVPYgb3"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7xAvtuHf8nGi5OtXVPYgb3",
+            "id": "7xAvtuHf8nGi5OtXVPYgb3",
+            "is_playable": true,
+            "name": "CRANK",
+            "preview_url": null,
+            "track_number": 13,
+            "type": "track",
+            "uri": "spotify:track:7xAvtuHf8nGi5OtXVPYgb3",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+                },
+                "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+                "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+                "name": "Travis Scott",
+                "type": "artist",
+                "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 225000,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/21aDVa64pWR8SYQ7wBRMkd"
+            },
+            "href": "https://api.spotify.com/v1/tracks/21aDVa64pWR8SYQ7wBRMkd",
+            "id": "21aDVa64pWR8SYQ7wBRMkd",
+            "is_playable": true,
+            "name": "CHARGE DEM HOES A FEE (with Future & Travis Scott)",
+            "preview_url": null,
+            "track_number": 14,
+            "type": "track",
+            "uri": "spotify:track:21aDVa64pWR8SYQ7wBRMkd",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+                },
+                "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+                "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+                "name": "Kendrick Lamar",
+                "type": "artist",
+                "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 190373,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2n9fC0A4ptmWqYeMXEVaok"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2n9fC0A4ptmWqYeMXEVaok",
+            "id": "2n9fC0A4ptmWqYeMXEVaok",
+            "is_playable": true,
+            "name": "GOOD CREDIT (with Kendrick Lamar)",
+            "preview_url": null,
+            "track_number": 15,
+            "type": "track",
+            "uri": "spotify:track:2n9fC0A4ptmWqYeMXEVaok",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 158896,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2ydagYqcyFfRtQPzKc5E8l"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2ydagYqcyFfRtQPzKc5E8l",
+            "id": "2ydagYqcyFfRtQPzKc5E8l",
+            "is_playable": true,
+            "name": "I SEEEEEE YOU BABY BOI",
+            "preview_url": null,
+            "track_number": 16,
+            "type": "track",
+            "uri": "spotify:track:2ydagYqcyFfRtQPzKc5E8l",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+                },
+                "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+                "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+                "name": "Travis Scott",
+                "type": "artist",
+                "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 169333,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1pzN8bCzy017iK3vWzkk6Z"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1pzN8bCzy017iK3vWzkk6Z",
+            "id": "1pzN8bCzy017iK3vWzkk6Z",
+            "is_playable": true,
+            "name": "WAKE UP F1LTHY (with Travis Scott)",
+            "preview_url": null,
+            "track_number": 17,
+            "type": "track",
+            "uri": "spotify:track:1pzN8bCzy017iK3vWzkk6Z",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4O15NlyKLIASxsJ0PrXPfz"
+                },
+                "href": "https://api.spotify.com/v1/artists/4O15NlyKLIASxsJ0PrXPfz",
+                "id": "4O15NlyKLIASxsJ0PrXPfz",
+                "name": "Lil Uzi Vert",
+                "type": "artist",
+                "uri": "spotify:artist:4O15NlyKLIASxsJ0PrXPfz"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 92735,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7oZOCPjlLpHZtIebTXhlfZ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7oZOCPjlLpHZtIebTXhlfZ",
+            "id": "7oZOCPjlLpHZtIebTXhlfZ",
+            "is_playable": true,
+            "name": "JUMPIN (with Lil Uzi Vert)",
+            "preview_url": null,
+            "track_number": 18,
+            "type": "track",
+            "uri": "spotify:track:7oZOCPjlLpHZtIebTXhlfZ",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 193546,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4qvsNsA4gQKC9HLrmPC2Vx"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4qvsNsA4gQKC9HLrmPC2Vx",
+            "id": "4qvsNsA4gQKC9HLrmPC2Vx",
+            "is_playable": true,
+            "name": "TRIM (with Future)",
+            "preview_url": null,
+            "track_number": 19,
+            "type": "track",
+            "uri": "spotify:track:4qvsNsA4gQKC9HLrmPC2Vx",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 151160,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4rXxjHSAglOynjIF8Z34dx"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4rXxjHSAglOynjIF8Z34dx",
+            "id": "4rXxjHSAglOynjIF8Z34dx",
+            "is_playable": true,
+            "name": "COCAINE NOSE",
+            "preview_url": null,
+            "track_number": 20,
+            "type": "track",
+            "uri": "spotify:track:4rXxjHSAglOynjIF8Z34dx",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7c0XG5cIJTrrAgEC3ULPiq"
+                },
+                "href": "https://api.spotify.com/v1/artists/7c0XG5cIJTrrAgEC3ULPiq",
+                "id": "7c0XG5cIJTrrAgEC3ULPiq",
+                "name": "Ty Dolla $ign",
+                "type": "artist",
+                "uri": "spotify:artist:7c0XG5cIJTrrAgEC3ULPiq"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 181626,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4XcZp2xqbiD8YsnPboNUDo"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4XcZp2xqbiD8YsnPboNUDo",
+            "id": "4XcZp2xqbiD8YsnPboNUDo",
+            "is_playable": true,
+            "name": "WE NEED ALL DA VIBES (with Young Thug & Ty Dolla $ign)",
+            "preview_url": null,
+            "track_number": 21,
+            "type": "track",
+            "uri": "spotify:track:4XcZp2xqbiD8YsnPboNUDo",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 174733,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4uoADk7q83CHvXHW3k1etM"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4uoADk7q83CHvXHW3k1etM",
+            "id": "4uoADk7q83CHvXHW3k1etM",
+            "is_playable": true,
+            "name": "OLYMPIAN",
+            "preview_url": null,
+            "track_number": 22,
+            "type": "track",
+            "uri": "spotify:track:4uoADk7q83CHvXHW3k1etM",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 173076,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/76yJsfb1CUy5Um8nFL7jKQ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/76yJsfb1CUy5Um8nFL7jKQ",
+            "id": "76yJsfb1CUy5Um8nFL7jKQ",
+            "is_playable": true,
+            "name": "OPM BABI",
+            "preview_url": null,
+            "track_number": 23,
+            "type": "track",
+            "uri": "spotify:track:76yJsfb1CUy5Um8nFL7jKQ",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4O15NlyKLIASxsJ0PrXPfz"
+                },
+                "href": "https://api.spotify.com/v1/artists/4O15NlyKLIASxsJ0PrXPfz",
+                "id": "4O15NlyKLIASxsJ0PrXPfz",
+                "name": "Lil Uzi Vert",
+                "type": "artist",
+                "uri": "spotify:artist:4O15NlyKLIASxsJ0PrXPfz"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 94825,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3surY3LebvLLdJezmiKUBO"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3surY3LebvLLdJezmiKUBO",
+            "id": "3surY3LebvLLdJezmiKUBO",
+            "is_playable": true,
+            "name": "TWIN TRIM (with Lil Uzi Vert)",
+            "preview_url": null,
+            "track_number": 24,
+            "type": "track",
+            "uri": "spotify:track:3surY3LebvLLdJezmiKUBO",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 115600,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4zK082ykqJzJGzC64NXjp1"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4zK082ykqJzJGzC64NXjp1",
+            "id": "4zK082ykqJzJGzC64NXjp1",
+            "is_playable": true,
+            "name": "LIKE WEEZY",
+            "preview_url": null,
+            "track_number": 25,
+            "type": "track",
+            "uri": "spotify:track:4zK082ykqJzJGzC64NXjp1",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 123870,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4tMhjP02FRQ0KIUUEJ2oGK"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4tMhjP02FRQ0KIUUEJ2oGK",
+            "id": "4tMhjP02FRQ0KIUUEJ2oGK",
+            "is_playable": true,
+            "name": "DIS 1 GOT IT",
+            "preview_url": null,
+            "track_number": 26,
+            "type": "track",
+            "uri": "spotify:track:4tMhjP02FRQ0KIUUEJ2oGK",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 94411,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5Qya13gFXqupr4sSmZMKDg"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5Qya13gFXqupr4sSmZMKDg",
+            "id": "5Qya13gFXqupr4sSmZMKDg",
+            "is_playable": true,
+            "name": "WALK",
+            "preview_url": null,
+            "track_number": 27,
+            "type": "track",
+            "uri": "spotify:track:5Qya13gFXqupr4sSmZMKDg",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 212598,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6q2PbvM9UEig4r8xku7VIb"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6q2PbvM9UEig4r8xku7VIb",
+            "id": "6q2PbvM9UEig4r8xku7VIb",
+            "is_playable": true,
+            "name": "HBA",
+            "preview_url": null,
+            "track_number": 28,
+            "type": "track",
+            "uri": "spotify:track:6q2PbvM9UEig4r8xku7VIb",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 105902,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5tRylsadMpm8TydUgq7NWj"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5tRylsadMpm8TydUgq7NWj",
+            "id": "5tRylsadMpm8TydUgq7NWj",
+            "is_playable": true,
+            "name": "OVERLY",
+            "preview_url": null,
+            "track_number": 29,
+            "type": "track",
+            "uri": "spotify:track:5tRylsadMpm8TydUgq7NWj",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+                },
+                "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
+                "id": "699OTQXzgjhIYAHMy9RyPD",
+                "name": "Playboi Carti",
+                "type": "artist",
+                "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 133259,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7cHhlnawdN87aZbjO6LMRN"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7cHhlnawdN87aZbjO6LMRN",
+            "id": "7cHhlnawdN87aZbjO6LMRN",
+            "is_playable": true,
+            "name": "SOUTH ATLANTA BABY",
+            "preview_url": null,
+            "track_number": 30,
+            "type": "track",
+            "uri": "spotify:track:7cHhlnawdN87aZbjO6LMRN",
+            "is_local": false
+          }
+        ]
+      },
+      "copyrights": [
+        {
+          "text": "© 2025 AWGE/Interscope Records",
+          "type": "C"
+        },
+        {
+          "text": "℗ 2025 AWGE/Interscope Records",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "00602475797050"
+      },
+      "genres": [],
+      "label": "AWGE/Interscope Records",
+      "popularity": 97
+    },
+    {
+      "album_type": "single",
+      "total_tracks": 1,
+      "is_playable": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3QgFzksD4J43TnGIJOOrRV"
+      },
+      "href": "https://api.spotify.com/v1/albums/3QgFzksD4J43TnGIJOOrRV?market=US&locale=en-US%2Cen%3Bq%3D0.9",
+      "id": "3QgFzksD4J43TnGIJOOrRV",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab67616d0000b273a8d74e789b99484e0e169001",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d00001e02a8d74e789b99484e0e169001",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d00004851a8d74e789b99484e0e169001",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "name": "The Difference",
+      "release_date": "2020-03-11",
+      "release_date_precision": "day",
+      "type": "album",
+      "uri": "spotify:album:3QgFzksD4J43TnGIJOOrRV",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6nxWCVXbOlEVRexSbLsTer"
+          },
+          "href": "https://api.spotify.com/v1/artists/6nxWCVXbOlEVRexSbLsTer",
+          "id": "6nxWCVXbOlEVRexSbLsTer",
+          "name": "Flume",
+          "type": "artist",
+          "uri": "spotify:artist:6nxWCVXbOlEVRexSbLsTer"
+        }
+      ],
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/3QgFzksD4J43TnGIJOOrRV/tracks?offset=0&limit=50&market=US&locale=en-US,en;q%3D0.9",
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 1,
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6nxWCVXbOlEVRexSbLsTer"
+                },
+                "href": "https://api.spotify.com/v1/artists/6nxWCVXbOlEVRexSbLsTer",
+                "id": "6nxWCVXbOlEVRexSbLsTer",
+                "name": "Flume",
+                "type": "artist",
+                "uri": "spotify:artist:6nxWCVXbOlEVRexSbLsTer"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6O4EGCCb6DoIiR6B1QCQgp"
+                },
+                "href": "https://api.spotify.com/v1/artists/6O4EGCCb6DoIiR6B1QCQgp",
+                "id": "6O4EGCCb6DoIiR6B1QCQgp",
+                "name": "Toro y Moi",
+                "type": "artist",
+                "uri": "spotify:artist:6O4EGCCb6DoIiR6B1QCQgp"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 139662,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4nlvKIIetOWGIMyhjQXgOZ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5kJ4BWZ9Y1qFIwwTbMIxYX",
+            "id": "5kJ4BWZ9Y1qFIwwTbMIxYX",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4nlvKIIetOWGIMyhjQXgOZ"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4nlvKIIetOWGIMyhjQXgOZ",
+              "id": "4nlvKIIetOWGIMyhjQXgOZ",
+              "type": "track",
+              "uri": "spotify:track:4nlvKIIetOWGIMyhjQXgOZ"
+            },
+            "name": "The Difference",
+            "preview_url": null,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:5kJ4BWZ9Y1qFIwwTbMIxYX",
+            "is_local": false
+          }
+        ]
+      },
+      "copyrights": [
+        {
+          "text": "2020 Future Classic",
+          "type": "C"
+        },
+        {
+          "text": "2020 Future Classic",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "653738041823"
+      },
+      "genres": [],
+      "label": "Future Classic",
+      "popularity": 5
+    },
+    {
+      "album_type": "album",
+      "total_tracks": 13,
+      "is_playable": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/187UNqZ7MX3neMYkkevmdm"
+      },
+      "href": "https://api.spotify.com/v1/albums/187UNqZ7MX3neMYkkevmdm?market=US&locale=en-US%2Cen%3Bq%3D0.9",
+      "id": "187UNqZ7MX3neMYkkevmdm",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab67616d0000b2735998097d9467eccb3e99b8c1",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d00001e025998097d9467eccb3e99b8c1",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d000048515998097d9467eccb3e99b8c1",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "name": "SUPER SLIMEY",
+      "release_date": "2017-10-20",
+      "release_date_precision": "day",
+      "type": "album",
+      "uri": "spotify:album:187UNqZ7MX3neMYkkevmdm",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+          },
+          "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+          "id": "1RyvyyTE3xzB2ZywiAwp0i",
+          "name": "Future",
+          "type": "artist",
+          "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+          },
+          "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+          "id": "50co4Is1HCEo8bhOyUWKpn",
+          "name": "Young Thug",
+          "type": "artist",
+          "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+        }
+      ],
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/187UNqZ7MX3neMYkkevmdm/tracks?offset=0&limit=50&market=US&locale=en-US,en;q%3D0.9",
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 13,
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 144142,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/06Gyf2pFDVmN5K8XAawG96"
+            },
+            "href": "https://api.spotify.com/v1/tracks/06Gyf2pFDVmN5K8XAawG96",
+            "id": "06Gyf2pFDVmN5K8XAawG96",
+            "is_playable": true,
+            "name": "No Cap",
+            "preview_url": null,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:06Gyf2pFDVmN5K8XAawG96",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 159400,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4W598w0KcHVG5Nwqk0qMpj"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4W598w0KcHVG5Nwqk0qMpj",
+            "id": "4W598w0KcHVG5Nwqk0qMpj",
+            "is_playable": true,
+            "name": "Three",
+            "preview_url": null,
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:4W598w0KcHVG5Nwqk0qMpj",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 204960,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1wWRtPIKD7ZNvtsrzLyTev"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1wWRtPIKD7ZNvtsrzLyTev",
+            "id": "1wWRtPIKD7ZNvtsrzLyTev",
+            "is_playable": true,
+            "name": "All da Smoke",
+            "preview_url": null,
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:1wWRtPIKD7ZNvtsrzLyTev",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 146986,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5b06JZjts6dgyyuY1m7roq"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5b06JZjts6dgyyuY1m7roq",
+            "id": "5b06JZjts6dgyyuY1m7roq",
+            "is_playable": true,
+            "name": "200",
+            "preview_url": null,
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:5b06JZjts6dgyyuY1m7roq",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 166466,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3C4FUqrrjuvWoHwsumWfIu"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3C4FUqrrjuvWoHwsumWfIu",
+            "id": "3C4FUqrrjuvWoHwsumWfIu",
+            "is_playable": true,
+            "name": "Cruise Ship",
+            "preview_url": null,
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:3C4FUqrrjuvWoHwsumWfIu",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4DdkRBBYG6Yk9Ka8tdJ9BW"
+                },
+                "href": "https://api.spotify.com/v1/artists/4DdkRBBYG6Yk9Ka8tdJ9BW",
+                "id": "4DdkRBBYG6Yk9Ka8tdJ9BW",
+                "name": "Offset",
+                "type": "artist",
+                "uri": "spotify:artist:4DdkRBBYG6Yk9Ka8tdJ9BW"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 189480,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7r6LNJT2LqpLpEyZQJPygt"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7r6LNJT2LqpLpEyZQJPygt",
+            "id": "7r6LNJT2LqpLpEyZQJPygt",
+            "is_playable": true,
+            "name": "Patek Water (feat. Offset)",
+            "preview_url": null,
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:7r6LNJT2LqpLpEyZQJPygt",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 166693,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3lyeSiAIdLoZUHhV8psOTI"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3lyeSiAIdLoZUHhV8psOTI",
+            "id": "3lyeSiAIdLoZUHhV8psOTI",
+            "is_playable": true,
+            "name": "Feed Me Dope",
+            "preview_url": null,
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:3lyeSiAIdLoZUHhV8psOTI",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 199840,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2ya9d4B06EQ8Fpj5SSqiTH"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2ya9d4B06EQ8Fpj5SSqiTH",
+            "id": "2ya9d4B06EQ8Fpj5SSqiTH",
+            "is_playable": false,
+            "restrictions": {
+              "reason": "market"
+            },
+            "name": "Drip on Me",
+            "preview_url": null,
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:2ya9d4B06EQ8Fpj5SSqiTH",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 242346,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1OwNWr75pNTyhifOTT0uIG"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1OwNWr75pNTyhifOTT0uIG",
+            "id": "1OwNWr75pNTyhifOTT0uIG",
+            "is_playable": true,
+            "name": "Real Love",
+            "preview_url": null,
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:1OwNWr75pNTyhifOTT0uIG",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 187748,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3IJ6BBFLD2I2CH3hHFQj3O"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3IJ6BBFLD2I2CH3hHFQj3O",
+            "id": "3IJ6BBFLD2I2CH3hHFQj3O",
+            "is_playable": true,
+            "name": "4 da Gang",
+            "preview_url": null,
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:3IJ6BBFLD2I2CH3hHFQj3O",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 220706,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0jPLBur1qXRfj3pbuJSX03"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0jPLBur1qXRfj3pbuJSX03",
+            "id": "0jPLBur1qXRfj3pbuJSX03",
+            "is_playable": true,
+            "name": "Killed Before",
+            "preview_url": null,
+            "track_number": 11,
+            "type": "track",
+            "uri": "spotify:track:0jPLBur1qXRfj3pbuJSX03",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 178786,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1KF7iLK6wK3hjjtqxjRiym"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1KF7iLK6wK3hjjtqxjRiym",
+            "id": "1KF7iLK6wK3hjjtqxjRiym",
+            "is_playable": true,
+            "name": "Mink Flow",
+            "preview_url": null,
+            "track_number": 12,
+            "type": "track",
+            "uri": "spotify:track:1KF7iLK6wK3hjjtqxjRiym",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                },
+                "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                "id": "50co4Is1HCEo8bhOyUWKpn",
+                "name": "Young Thug",
+                "type": "artist",
+                "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 242053,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3kciYQvHGFkQYaZd0m1Pbc"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3kciYQvHGFkQYaZd0m1Pbc",
+            "id": "3kciYQvHGFkQYaZd0m1Pbc",
+            "is_playable": true,
+            "name": "Group Home",
+            "preview_url": null,
+            "track_number": 13,
+            "type": "track",
+            "uri": "spotify:track:3kciYQvHGFkQYaZd0m1Pbc",
+            "is_local": false
+          }
+        ]
+      },
+      "copyrights": [
+        {
+          "text": "(P) 2017 Epic Records, a division of Sony Music Entertainment. With 300 Entertainment/Atlantic Recordings Corporation.",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "886446806105"
+      },
+      "genres": [],
+      "label": "Epic/300/Atlantic Recording Corporation",
+      "popularity": 58
+    },
+    {
+      "album_type": "album",
+      "total_tracks": 19,
+      "is_playable": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0fUy6IdLHDpGNwavIlhEsl"
+      },
+      "href": "https://api.spotify.com/v1/albums/0fUy6IdLHDpGNwavIlhEsl?market=US&locale=en-US%2Cen%3Bq%3D0.9",
+      "id": "0fUy6IdLHDpGNwavIlhEsl",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab67616d0000b273b2592bea12d840fd096ef965",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d00001e02b2592bea12d840fd096ef965",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d00004851b2592bea12d840fd096ef965",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "name": "DS2 (Deluxe)",
+      "release_date": "2015-07-17",
+      "release_date_precision": "day",
+      "type": "album",
+      "uri": "spotify:album:0fUy6IdLHDpGNwavIlhEsl",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+          },
+          "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+          "id": "1RyvyyTE3xzB2ZywiAwp0i",
+          "name": "Future",
+          "type": "artist",
+          "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+        }
+      ],
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/0fUy6IdLHDpGNwavIlhEsl/tracks?offset=0&limit=50&market=US&locale=en-US,en;q%3D0.9",
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 19,
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 265213,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5ihDGnhQgMA0F0tk9fNLlA"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5ihDGnhQgMA0F0tk9fNLlA",
+            "id": "5ihDGnhQgMA0F0tk9fNLlA",
+            "is_playable": true,
+            "name": "Thought It Was a Drought",
+            "preview_url": null,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:5ihDGnhQgMA0F0tk9fNLlA",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 190893,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1Rq4GtIucW9CAcF8B6PAbW"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1Rq4GtIucW9CAcF8B6PAbW",
+            "id": "1Rq4GtIucW9CAcF8B6PAbW",
+            "is_playable": true,
+            "name": "I Serve the Base",
+            "preview_url": null,
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:1Rq4GtIucW9CAcF8B6PAbW",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                },
+                "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                "id": "3TVXtAsR1Inumwj472S9r4",
+                "name": "Drake",
+                "type": "artist",
+                "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 208026,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5nN8BwAQDJDguq7Dpd3JQQ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5nN8BwAQDJDguq7Dpd3JQQ",
+            "id": "5nN8BwAQDJDguq7Dpd3JQQ",
+            "is_playable": true,
+            "name": "Where Ya At (feat. Drake)",
+            "preview_url": null,
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:5nN8BwAQDJDguq7Dpd3JQQ",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 187253,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6T2vocVm6BFUo4OipxEEmb"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6T2vocVm6BFUo4OipxEEmb",
+            "id": "6T2vocVm6BFUo4OipxEEmb",
+            "is_playable": true,
+            "name": "Groupies",
+            "preview_url": null,
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:6T2vocVm6BFUo4OipxEEmb",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 207986,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4Bt9yX2Gq7Q1biRF45EN1C"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4Bt9yX2Gq7Q1biRF45EN1C",
+            "id": "4Bt9yX2Gq7Q1biRF45EN1C",
+            "is_playable": true,
+            "name": "Lil One",
+            "preview_url": null,
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:4Bt9yX2Gq7Q1biRF45EN1C",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 171333,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/20fAoPjfYltmd3K3bO7gbt"
+            },
+            "href": "https://api.spotify.com/v1/tracks/20fAoPjfYltmd3K3bO7gbt",
+            "id": "20fAoPjfYltmd3K3bO7gbt",
+            "is_playable": true,
+            "name": "Stick Talk",
+            "preview_url": null,
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:20fAoPjfYltmd3K3bO7gbt",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 174733,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7unZ7zDyrTs2L7167dqm2Y"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7unZ7zDyrTs2L7167dqm2Y",
+            "id": "7unZ7zDyrTs2L7167dqm2Y",
+            "is_playable": true,
+            "name": "Freak Hoe",
+            "preview_url": null,
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:7unZ7zDyrTs2L7167dqm2Y",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 167613,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0FA8Pw164j1qW4YEfpaVRy"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0FA8Pw164j1qW4YEfpaVRy",
+            "id": "0FA8Pw164j1qW4YEfpaVRy",
+            "is_playable": true,
+            "name": "Rotation",
+            "preview_url": null,
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:0FA8Pw164j1qW4YEfpaVRy",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 199746,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7sGZDsOCYpvqkIv8eH4jOG"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7sGZDsOCYpvqkIv8eH4jOG",
+            "id": "7sGZDsOCYpvqkIv8eH4jOG",
+            "is_playable": true,
+            "name": "Slave Master",
+            "preview_url": null,
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:7sGZDsOCYpvqkIv8eH4jOG",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 194240,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6ycYqFnXnjMOwMvEMbEpUk"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6ycYqFnXnjMOwMvEMbEpUk",
+            "id": "6ycYqFnXnjMOwMvEMbEpUk",
+            "is_playable": true,
+            "name": "Blow a Bag",
+            "preview_url": null,
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:6ycYqFnXnjMOwMvEMbEpUk",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 183760,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1RxR1IwTzgPlBcLn61LT1u"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1RxR1IwTzgPlBcLn61LT1u",
+            "id": "1RxR1IwTzgPlBcLn61LT1u",
+            "is_playable": true,
+            "name": "Colossal",
+            "preview_url": null,
+            "track_number": 11,
+            "type": "track",
+            "uri": "spotify:track:1RxR1IwTzgPlBcLn61LT1u",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 240160,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2onCHFrhTinyUc6OawwU4Z"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2onCHFrhTinyUc6OawwU4Z",
+            "id": "2onCHFrhTinyUc6OawwU4Z",
+            "is_playable": true,
+            "name": "Rich $ex",
+            "preview_url": null,
+            "track_number": 12,
+            "type": "track",
+            "uri": "spotify:track:2onCHFrhTinyUc6OawwU4Z",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 282253,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2KBzUcKeNdsujWiK3djHvd"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2KBzUcKeNdsujWiK3djHvd",
+            "id": "2KBzUcKeNdsujWiK3djHvd",
+            "is_playable": true,
+            "name": "Blood On the Money",
+            "preview_url": null,
+            "track_number": 13,
+            "type": "track",
+            "uri": "spotify:track:2KBzUcKeNdsujWiK3djHvd",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 183800,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6elNeXUhiuHPD9hH5rocQi"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6elNeXUhiuHPD9hH5rocQi",
+            "id": "6elNeXUhiuHPD9hH5rocQi",
+            "is_playable": true,
+            "name": "Trap Niggas",
+            "preview_url": null,
+            "track_number": 14,
+            "type": "track",
+            "uri": "spotify:track:6elNeXUhiuHPD9hH5rocQi",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 148453,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1yCVsVH2hQ72SxNI8QTDaB"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1yCVsVH2hQ72SxNI8QTDaB",
+            "id": "1yCVsVH2hQ72SxNI8QTDaB",
+            "is_playable": true,
+            "name": "The Percocet & Stripper Joint",
+            "preview_url": null,
+            "track_number": 15,
+            "type": "track",
+            "uri": "spotify:track:1yCVsVH2hQ72SxNI8QTDaB",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 173800,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5GhJq5J9ZWIEDZdyw7EWzt"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5GhJq5J9ZWIEDZdyw7EWzt",
+            "id": "5GhJq5J9ZWIEDZdyw7EWzt",
+            "is_playable": true,
+            "name": "Real Sisters",
+            "preview_url": null,
+            "track_number": 16,
+            "type": "track",
+            "uri": "spotify:track:5GhJq5J9ZWIEDZdyw7EWzt",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 225213,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2depzNvnAgMFKYnm3moXIc"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2depzNvnAgMFKYnm3moXIc",
+            "id": "2depzNvnAgMFKYnm3moXIc",
+            "is_playable": true,
+            "name": "Kno The Meaning",
+            "preview_url": null,
+            "track_number": 17,
+            "type": "track",
+            "uri": "spotify:track:2depzNvnAgMFKYnm3moXIc",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 237400,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/49zD0wr2S3d0lZPib0K4e1"
+            },
+            "href": "https://api.spotify.com/v1/tracks/49zD0wr2S3d0lZPib0K4e1",
+            "id": "49zD0wr2S3d0lZPib0K4e1",
+            "is_playable": true,
+            "name": "Fuck Up Some Commas",
+            "preview_url": null,
+            "track_number": 18,
+            "type": "track",
+            "uri": "spotify:track:49zD0wr2S3d0lZPib0K4e1",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+                },
+                "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                "name": "Future",
+                "type": "artist",
+                "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/59wfkuBoNyhDMQGCljbUbA"
+                },
+                "href": "https://api.spotify.com/v1/artists/59wfkuBoNyhDMQGCljbUbA",
+                "id": "59wfkuBoNyhDMQGCljbUbA",
+                "name": "Diddy",
+                "type": "artist",
+                "uri": "spotify:artist:59wfkuBoNyhDMQGCljbUbA"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2RdwBSPQiwcmiDo9kixcl8"
+                },
+                "href": "https://api.spotify.com/v1/artists/2RdwBSPQiwcmiDo9kixcl8",
+                "id": "2RdwBSPQiwcmiDo9kixcl8",
+                "name": "Pharrell Williams",
+                "type": "artist",
+                "uri": "spotify:artist:2RdwBSPQiwcmiDo9kixcl8"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3ipn9JLAPI5GUEo4y4jcoi"
+                },
+                "href": "https://api.spotify.com/v1/artists/3ipn9JLAPI5GUEo4y4jcoi",
+                "id": "3ipn9JLAPI5GUEo4y4jcoi",
+                "name": "Ludacris",
+                "type": "artist",
+                "uri": "spotify:artist:3ipn9JLAPI5GUEo4y4jcoi"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0ONHkAv9pCAFxb0zJwDNTy"
+                },
+                "href": "https://api.spotify.com/v1/artists/0ONHkAv9pCAFxb0zJwDNTy",
+                "id": "0ONHkAv9pCAFxb0zJwDNTy",
+                "name": "Pusha T",
+                "type": "artist",
+                "uri": "spotify:artist:0ONHkAv9pCAFxb0zJwDNTy"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4XvaV0jFnwEthusiVdEBHK"
+                },
+                "href": "https://api.spotify.com/v1/artists/4XvaV0jFnwEthusiVdEBHK",
+                "id": "4XvaV0jFnwEthusiVdEBHK",
+                "name": "Casino",
+                "type": "artist",
+                "uri": "spotify:artist:4XvaV0jFnwEthusiVdEBHK"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 1549965,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1H2KZ21IWEEhjoVyqS10S8"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1H2KZ21IWEEhjoVyqS10S8",
+            "id": "1H2KZ21IWEEhjoVyqS10S8",
+            "is_playable": true,
+            "name": "Like I Never Left (feat. Diddy, Ludacris, Pharrell, Pusha T & Casino)",
+            "preview_url": null,
+            "track_number": 19,
+            "type": "track",
+            "uri": "spotify:track:1H2KZ21IWEEhjoVyqS10S8",
+            "is_local": false
+          }
+        ]
+      },
+      "copyrights": [
+        {
+          "text": "(P) 2015 Epic Records, a division of Sony Music Entertainment",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "886445398274"
+      },
+      "genres": [],
+      "label": "Epic/Freebandz/A1",
+      "popularity": 74
+    },
+    {
+      "album_type": "album",
+      "total_tracks": 19,
+      "is_playable": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/62yjWIhnATHxPqGbgC9Lqr"
+      },
+      "href": "https://api.spotify.com/v1/albums/62yjWIhnATHxPqGbgC9Lqr?market=US&locale=en-US%2Cen%3Bq%3D0.9",
+      "id": "62yjWIhnATHxPqGbgC9Lqr",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab67616d0000b27326d64b6150aa3d9b6b67d857",
+          "height": 640,
+          "width": 640
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d00001e0226d64b6150aa3d9b6b67d857",
+          "height": 300,
+          "width": 300
+        },
+        {
+          "url": "https://i.scdn.co/image/ab67616d0000485126d64b6150aa3d9b6b67d857",
+          "height": 64,
+          "width": 64
+        }
+      ],
+      "name": "Because the Internet",
+      "release_date": "2013-12-10",
+      "release_date_precision": "day",
+      "type": "album",
+      "uri": "spotify:album:62yjWIhnATHxPqGbgC9Lqr",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+          },
+          "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+          "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+          "name": "Childish Gambino",
+          "type": "artist",
+          "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+        }
+      ],
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/62yjWIhnATHxPqGbgC9Lqr/tracks?offset=0&limit=50&market=US&locale=en-US,en;q%3D0.9",
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 19,
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 4811,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/69NYP4GpJ64KJJfDkAolL5"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6fd9RQbjRJVu5bboe76Asw",
+            "id": "6fd9RQbjRJVu5bboe76Asw",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/69NYP4GpJ64KJJfDkAolL5"
+              },
+              "href": "https://api.spotify.com/v1/tracks/69NYP4GpJ64KJJfDkAolL5",
+              "id": "69NYP4GpJ64KJJfDkAolL5",
+              "type": "track",
+              "uri": "spotify:track:69NYP4GpJ64KJJfDkAolL5"
+            },
+            "name": "The Library - Intro",
+            "preview_url": null,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:6fd9RQbjRJVu5bboe76Asw",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 209473,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6Wkehibq4hvtIoO75H43OR"
+            },
+            "href": "https://api.spotify.com/v1/tracks/11LpjG9t8CIEiDpDufY70V",
+            "id": "11LpjG9t8CIEiDpDufY70V",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6Wkehibq4hvtIoO75H43OR"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6Wkehibq4hvtIoO75H43OR",
+              "id": "6Wkehibq4hvtIoO75H43OR",
+              "type": "track",
+              "uri": "spotify:track:6Wkehibq4hvtIoO75H43OR"
+            },
+            "name": "I.Crawl",
+            "preview_url": null,
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:11LpjG9t8CIEiDpDufY70V",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 244651,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0sutbJye3ZnRnzpOhlOaqL"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4oIHQ7BXApxvJ42yX0d5Qj",
+            "id": "4oIHQ7BXApxvJ42yX0d5Qj",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0sutbJye3ZnRnzpOhlOaqL"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0sutbJye3ZnRnzpOhlOaqL",
+              "id": "0sutbJye3ZnRnzpOhlOaqL",
+              "type": "track",
+              "uri": "spotify:track:0sutbJye3ZnRnzpOhlOaqL"
+            },
+            "name": "II. Worldstar",
+            "preview_url": null,
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:4oIHQ7BXApxvJ42yX0d5Qj",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 44536,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1cFHHbgIaIrq0SjebjK48r"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2XWJSH29t2wiVssvn6ZJT4",
+            "id": "2XWJSH29t2wiVssvn6ZJT4",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1cFHHbgIaIrq0SjebjK48r"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1cFHHbgIaIrq0SjebjK48r",
+              "id": "1cFHHbgIaIrq0SjebjK48r",
+              "type": "track",
+              "uri": "spotify:track:1cFHHbgIaIrq0SjebjK48r"
+            },
+            "name": "Dial Up",
+            "preview_url": null,
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:2XWJSH29t2wiVssvn6ZJT4",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                },
+                "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                "id": "1anyVhU62p31KFi8MEzkbf",
+                "name": "Chance the Rapper",
+                "type": "artist",
+                "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 219739,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0kErPGykp7EJo7L5fx8YjB"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4jnctHRggVIvMgkru936fN",
+            "id": "4jnctHRggVIvMgkru936fN",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0kErPGykp7EJo7L5fx8YjB"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0kErPGykp7EJo7L5fx8YjB",
+              "id": "0kErPGykp7EJo7L5fx8YjB",
+              "type": "track",
+              "uri": "spotify:track:0kErPGykp7EJo7L5fx8YjB"
+            },
+            "name": "I. The Worst Guys",
+            "preview_url": null,
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:4jnctHRggVIvMgkru936fN",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 231746,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4B2SZCQNf9uTee0pPO4cD7"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4A32tQkqdNxhP3vom3TqWe",
+            "id": "4A32tQkqdNxhP3vom3TqWe",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4B2SZCQNf9uTee0pPO4cD7"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4B2SZCQNf9uTee0pPO4cD7",
+              "id": "4B2SZCQNf9uTee0pPO4cD7",
+              "type": "track",
+              "uri": "spotify:track:4B2SZCQNf9uTee0pPO4cD7"
+            },
+            "name": "II. Shadows",
+            "preview_url": null,
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:4A32tQkqdNxhP3vom3TqWe",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 210673,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3hyyG3Rm7DdmDwG2ZHfxFR"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0fgosF2PWrYbyy9e7BclKz",
+            "id": "0fgosF2PWrYbyy9e7BclKz",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3hyyG3Rm7DdmDwG2ZHfxFR"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3hyyG3Rm7DdmDwG2ZHfxFR",
+              "id": "3hyyG3Rm7DdmDwG2ZHfxFR",
+              "type": "track",
+              "uri": "spotify:track:3hyyG3Rm7DdmDwG2ZHfxFR"
+            },
+            "name": "III. Telegraph Ave. (\"Oakland\" by Lloyd)",
+            "preview_url": null,
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:0fgosF2PWrYbyy9e7BclKz",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0399oiMcmbOzzsYQDNYqxn"
+                },
+                "href": "https://api.spotify.com/v1/artists/0399oiMcmbOzzsYQDNYqxn",
+                "id": "0399oiMcmbOzzsYQDNYqxn",
+                "name": "JasonMartin",
+                "type": "artist",
+                "uri": "spotify:artist:0399oiMcmbOzzsYQDNYqxn"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 180675,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3x4I4nRuZp5NdtGvCPw6Ms"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4NvXTrOSsVlCw0bFe3lKY9",
+            "id": "4NvXTrOSsVlCw0bFe3lKY9",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3x4I4nRuZp5NdtGvCPw6Ms"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3x4I4nRuZp5NdtGvCPw6Ms",
+              "id": "3x4I4nRuZp5NdtGvCPw6Ms",
+              "type": "track",
+              "uri": "spotify:track:3x4I4nRuZp5NdtGvCPw6Ms"
+            },
+            "name": "IV. Sweatpants",
+            "preview_url": null,
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:4NvXTrOSsVlCw0bFe3lKY9",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 234215,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5cc9Zbfp9u10sfJeKZ3h16"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2X6b7zLdIxCejd6GqVcQ9M",
+            "id": "2X6b7zLdIxCejd6GqVcQ9M",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5cc9Zbfp9u10sfJeKZ3h16"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5cc9Zbfp9u10sfJeKZ3h16",
+              "id": "5cc9Zbfp9u10sfJeKZ3h16",
+              "type": "track",
+              "uri": "spotify:track:5cc9Zbfp9u10sfJeKZ3h16"
+            },
+            "name": "3005",
+            "preview_url": null,
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:2X6b7zLdIxCejd6GqVcQ9M",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 54454,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4yLg1biohoNlXT23qvzybA"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2PvNMb5Tp3f4Zh0tOvB7fp",
+            "id": "2PvNMb5Tp3f4Zh0tOvB7fp",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4yLg1biohoNlXT23qvzybA"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4yLg1biohoNlXT23qvzybA",
+              "id": "4yLg1biohoNlXT23qvzybA",
+              "type": "track",
+              "uri": "spotify:track:4yLg1biohoNlXT23qvzybA"
+            },
+            "name": "Playing Around Before the Party Starts",
+            "preview_url": null,
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:2PvNMb5Tp3f4Zh0tOvB7fp",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 91292,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/11A5ZxYAkWil1GzDQ0PnFm"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1pYC3p85HfI8Ex1B1vzOww",
+            "id": "1pYC3p85HfI8Ex1B1vzOww",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/11A5ZxYAkWil1GzDQ0PnFm"
+              },
+              "href": "https://api.spotify.com/v1/tracks/11A5ZxYAkWil1GzDQ0PnFm",
+              "id": "11A5ZxYAkWil1GzDQ0PnFm",
+              "type": "track",
+              "uri": "spotify:track:11A5ZxYAkWil1GzDQ0PnFm"
+            },
+            "name": "I. The Party",
+            "preview_url": null,
+            "track_number": 11,
+            "type": "track",
+            "uri": "spotify:track:1pYC3p85HfI8Ex1B1vzOww",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 171779,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3ahSOjK0IKgr2HSSGEthuD"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4fjUDvbCndgYBWuYMpW894",
+            "id": "4fjUDvbCndgYBWuYMpW894",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3ahSOjK0IKgr2HSSGEthuD"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3ahSOjK0IKgr2HSSGEthuD",
+              "id": "3ahSOjK0IKgr2HSSGEthuD",
+              "type": "track",
+              "uri": "spotify:track:3ahSOjK0IKgr2HSSGEthuD"
+            },
+            "name": "II. No Exit",
+            "preview_url": null,
+            "track_number": 12,
+            "type": "track",
+            "uri": "spotify:track:4fjUDvbCndgYBWuYMpW894",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 43968,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4Fk4acAGSK8NSPFefl40mR"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1lDCNFj85Zmf98AOvDsBif",
+            "id": "1lDCNFj85Zmf98AOvDsBif",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4Fk4acAGSK8NSPFefl40mR"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4Fk4acAGSK8NSPFefl40mR",
+              "id": "4Fk4acAGSK8NSPFefl40mR",
+              "type": "track",
+              "uri": "spotify:track:4Fk4acAGSK8NSPFefl40mR"
+            },
+            "name": "Death By Numbers",
+            "preview_url": null,
+            "track_number": 13,
+            "type": "track",
+            "uri": "spotify:track:1lDCNFj85Zmf98AOvDsBif",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 344143,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7c5F8o848t9Nal1IN5QH1P"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0RDKUURGxghQIpKRpwIbpp",
+            "id": "0RDKUURGxghQIpKRpwIbpp",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7c5F8o848t9Nal1IN5QH1P"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7c5F8o848t9Nal1IN5QH1P",
+              "id": "7c5F8o848t9Nal1IN5QH1P",
+              "type": "track",
+              "uri": "spotify:track:7c5F8o848t9Nal1IN5QH1P"
+            },
+            "name": "I. Flight of the Navigator",
+            "preview_url": null,
+            "track_number": 14,
+            "type": "track",
+            "uri": "spotify:track:0RDKUURGxghQIpKRpwIbpp",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 290705,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2iYnN1zRkPxSaDmPGPd1YI"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6f22TuMwo4G1yADTOPdJiy",
+            "id": "6f22TuMwo4G1yADTOPdJiy",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2iYnN1zRkPxSaDmPGPd1YI"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2iYnN1zRkPxSaDmPGPd1YI",
+              "id": "2iYnN1zRkPxSaDmPGPd1YI",
+              "type": "track",
+              "uri": "spotify:track:2iYnN1zRkPxSaDmPGPd1YI"
+            },
+            "name": "II. Zealots of Stockholm [Free Information]",
+            "preview_url": null,
+            "track_number": 15,
+            "type": "track",
+            "uri": "spotify:track:6f22TuMwo4G1yADTOPdJiy",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 73386,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1wYIv0ySOwjMFWLOtrgtbo"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6KqAgoz02Jjga2TGdnCAKy",
+            "id": "6KqAgoz02Jjga2TGdnCAKy",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1wYIv0ySOwjMFWLOtrgtbo"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1wYIv0ySOwjMFWLOtrgtbo",
+              "id": "1wYIv0ySOwjMFWLOtrgtbo",
+              "type": "track",
+              "uri": "spotify:track:1wYIv0ySOwjMFWLOtrgtbo"
+            },
+            "name": "III. Urn",
+            "preview_url": null,
+            "track_number": 16,
+            "type": "track",
+            "uri": "spotify:track:6KqAgoz02Jjga2TGdnCAKy",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5ZS223C6JyBfXasXxrRqOk"
+                },
+                "href": "https://api.spotify.com/v1/artists/5ZS223C6JyBfXasXxrRqOk",
+                "id": "5ZS223C6JyBfXasXxrRqOk",
+                "name": "Jhené Aiko",
+                "type": "artist",
+                "uri": "spotify:artist:5ZS223C6JyBfXasXxrRqOk"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 207066,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4OfESCGOUVZMuGvppCU51j"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5rmmw20qm7TDplJvyQAhIn",
+            "id": "5rmmw20qm7TDplJvyQAhIn",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4OfESCGOUVZMuGvppCU51j"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4OfESCGOUVZMuGvppCU51j",
+              "id": "4OfESCGOUVZMuGvppCU51j",
+              "type": "track",
+              "uri": "spotify:track:4OfESCGOUVZMuGvppCU51j"
+            },
+            "name": "I. Pink Toes",
+            "preview_url": null,
+            "track_number": 17,
+            "type": "track",
+            "uri": "spotify:track:5rmmw20qm7TDplJvyQAhIn",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7gRhy3MIPHQo5CXYfWaw9I"
+                },
+                "href": "https://api.spotify.com/v1/artists/7gRhy3MIPHQo5CXYfWaw9I",
+                "id": "7gRhy3MIPHQo5CXYfWaw9I",
+                "name": "Azealia Banks",
+                "type": "artist",
+                "uri": "spotify:artist:7gRhy3MIPHQo5CXYfWaw9I"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 282418,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3Ku6ICItE1LKtsASrU5iOT"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4lVonIcSSHhcqXG1mowTC0",
+            "id": "4lVonIcSSHhcqXG1mowTC0",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3Ku6ICItE1LKtsASrU5iOT"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3Ku6ICItE1LKtsASrU5iOT",
+              "id": "3Ku6ICItE1LKtsASrU5iOT",
+              "type": "track",
+              "uri": "spotify:track:3Ku6ICItE1LKtsASrU5iOT"
+            },
+            "name": "II. Earth: The Oldest Computer (The Last Night)",
+            "preview_url": null,
+            "track_number": 18,
+            "type": "track",
+            "uri": "spotify:track:4lVonIcSSHhcqXG1mowTC0",
+            "is_local": false
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                },
+                "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                "name": "Childish Gambino",
+                "type": "artist",
+                "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 342048,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1XJXebSUqjmat7YmuMc5HK"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0cXHPADqI7N0BEQByrkmwd",
+            "id": "0cXHPADqI7N0BEQByrkmwd",
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1XJXebSUqjmat7YmuMc5HK"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1XJXebSUqjmat7YmuMc5HK",
+              "id": "1XJXebSUqjmat7YmuMc5HK",
+              "type": "track",
+              "uri": "spotify:track:1XJXebSUqjmat7YmuMc5HK"
+            },
+            "name": "III. Life: The Biggest Troll [Andrew Auernheimer]",
+            "preview_url": null,
+            "track_number": 19,
+            "type": "track",
+            "uri": "spotify:track:0cXHPADqI7N0BEQByrkmwd",
+            "is_local": false
+          }
+        ]
+      },
+      "copyrights": [
+        {
+          "text": "(C) 2013 MCDJ Recording under exclusive license to Glassnote Entertainment Group LLC, distributed by AWAL",
+          "type": "C"
+        },
+        {
+          "text": "(P) 2013 MCDJ Entertainment under exclusive license to Glassnote Entertainment Group LLC, distributed by AWAL",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "0044003173484"
+      },
+      "genres": [],
+      "label": "Glassnote Entertainment Group LLC",
+      "popularity": 17
+    }
+  ]
+}
