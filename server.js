@@ -16,8 +16,6 @@ app.use(express.json())
 app.use('/', express.static(path.join(__dirname, '/dist')));
 app.use(cors()); 
 
-// server.setTimeout(180000); // 3 minutes in milliseconds
-
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
@@ -45,6 +43,8 @@ app.post("/generateImage", (req, res) => {
 })
 
 
-app.listen(port, () => {
+var server = app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+server.setTimeout(180 * 1000) // 180 sec timeout
