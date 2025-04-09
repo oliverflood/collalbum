@@ -19,6 +19,7 @@ def reduce_with_pca(data, n_components=2):
     pca = PCA(n_components=n_components)
     return pca.fit_transform(data)
 
+
 def plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.9, zorder_imgs=False):
     fig, ax = plt.subplots(figsize=(10, 10))
     ax.set_xlim(coords[:, 0].min(), coords[:, 0].max())
@@ -75,6 +76,7 @@ def generate_collage_from_embeddings(embeddings: np.ndarray, images: list[Image.
     return plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.85)
 
 def generate_collage_from_image_urls(image_urls: list[str], image_loader) -> str:
+
     # Trim to closest square number of images
     grid_size = int(np.floor(np.sqrt(len(image_urls))))
     num_images = grid_size * grid_size

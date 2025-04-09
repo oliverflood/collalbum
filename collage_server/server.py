@@ -3,6 +3,7 @@ from .collage_from_embeddings import generate_collage_from_image_urls
 from PIL import Image
 import requests
 from io import BytesIO
+import time
 
 app = Flask(__name__)
 
@@ -16,6 +17,8 @@ def load_images_from_urls(url_list):
 
 @app.route('/generate_collage', methods=['POST'])
 def generate_collage():
+    start_time = time.time() 
+
     data = request.get_json()
     image_urls = data.get('images', [])
 
@@ -24,10 +27,14 @@ def generate_collage():
 
     try:
         collage_path = generate_collage_from_image_urls(image_urls, load_images_from_urls)
+        duration = time.time() - start_time
+        print(f"[TIMING] Collage generation took {duration:.2f} seconds")
         print(f"collage_path as seen in server.py {collage_path}")
         return send_file(collage_path, mimetype="image/jpeg")
 
     except Exception as e:
+        duration = time.time() - start_time
+        print(f"[TIMING] Error after {duration:.2f} seconds")
         print("Error occurred:", e)
         return jsonify({"error": str(e)}), 500
 
