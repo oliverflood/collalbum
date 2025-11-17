@@ -9,7 +9,7 @@ from sklearn.decomposition import PCA
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from io import BytesIO
 from .collage_utils import snap_images_x, snap_images_y, center_crop_fraction, add_position_dependent_jitter
-from .image_embedder import image_urls_to_vectors
+from .image_embedder import image_urls_to_vectors, image_urls_to_visual_vectors, normalize_vectors
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SAVE_DIR = os.path.join(PROJECT_ROOT, "collages")
@@ -21,6 +21,9 @@ def reduce_with_pca(data, n_components=2):
 
 
 def plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.9, zorder_imgs=False):
+
+    crop_fraction = 1 # BIG CHANGE: avoid cropping at all costs (to comply with Spotify API)
+
     fig, ax = plt.subplots(figsize=(10, 10))
     ax.set_xlim(coords[:, 0].min(), coords[:, 0].max())
     ax.set_ylim(coords[:, 1].min(), coords[:, 1].max())
@@ -34,9 +37,13 @@ def plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.9, zorder_i
     else:
         zorders = zorders = np.zeros(len(images))
 
-    base_zoom = 1.1 / grid_size
+    base_zoom = 1 / grid_size
+
     for i, ((x, y), img, z) in enumerate(zip(coords, images, zorders)):
-        size_factor = 1.82 - 1 * (i / (grid_size * grid_size))
+        # size_factor = 1.82 - 1 * (i / (grid_size * grid_size))
+
+        size_factor = 1 # BIG CHANGE: avoid resizing images based on their order in the array
+
         imagebox = OffsetImage(img.resize(CANVAS_IMAGE_SIZE), zoom=base_zoom * size_factor)
         ab = AnnotationBbox(imagebox, (x, y), frameon=False, zorder=z)
         ax.add_artist(ab)
@@ -70,7 +77,7 @@ def generate_collage_from_embeddings(embeddings: np.ndarray, images: list[Image.
     coords = reduce_with_pca(embeddings)
     coords = snap_images_x(coords, grid_size)
     coords = snap_images_y(coords, grid_size)
-    coords = add_position_dependent_jitter(coords, jitter_strength=0.25)
+    # coords = add_position_dependent_jitter(coords, jitter_strength=0.25) # BIG CHANGE: add no noise 
     coords = coords[:, [1, 0]]  # flip x/y for visual aesthetics
 
     return plot_images_on_canvas(images, coords, grid_size, crop_fraction=0.85)
@@ -86,7 +93,9 @@ def generate_collage_from_image_urls(image_urls: list[str], image_loader) -> str
     print("Fetching images")
     images = image_loader(image_urls)
 
-    print("Computing semantic + visual embeddings (batched)")
-    embeddings = image_urls_to_vectors(image_urls)
+    # print("Computing semantic + visual embeddings (batched)")
+    # embeddings = image_urls_to_vectors(image_urls)
+    print("Computing visual embeddings")
+    embeddings = normalize_vectors(image_urls_to_visual_vectors(image_urls)) # BIG CHANGE: only using "visual" embeddings
 
     return generate_collage_from_embeddings(embeddings, images)
